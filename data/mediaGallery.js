@@ -11,9 +11,24 @@ $(document).ready(function () {
 
   for (let i = 1; i <= 20; i++) {
     const sequentialClass = randomBorders[(i - 1) % randomBorders.length];
-
     mediaGalleryDay1Data.push({
       img: `https://hpcl.parmarketing.agency/images/hpcl/media_gallery/day1/${i}.webp`,
+      className: sequentialClass,
+    });
+  }
+
+  for (let i = 1; i <= 76; i++) {
+    const sequentialClass = randomBorders[(i - 1) % randomBorders.length];
+    mediaGalleryDay2Data.push({
+      img: `https://hpcl.parmarketing.agency/images/hpcl/media_gallery/day2/${i}.webp`,
+      className: sequentialClass,
+    });
+  }
+
+  for (let i = 1; i <= 32; i++) {
+    const sequentialClass = randomBorders[(i - 1) % randomBorders.length];
+    mediaGalleryDay3Data.push({
+      img: `https://hpcl.parmarketing.agency/images/hpcl/media_gallery/day3/${i}.webp`,
       className: sequentialClass,
     });
   }
@@ -21,8 +36,16 @@ $(document).ready(function () {
   const mediaGalleryDay1 = document.getElementById("media-gallery-day1");
   const media1LoadMore = document.getElementById("media1-load-more");
   let currentIndex1 = 0;
+  //
+  const mediaGalleryDay2 = document.getElementById("media-gallery-day2");
+  const media2LoadMore = document.getElementById("media2-load-more");
+  let currentIndex2 = 0;
+  //
+  const mediaGalleryDay3 = document.getElementById("media-gallery-day3");
+  const media3LoadMore = document.getElementById("media3-load-more");
+  let currentIndex3 = 0;
 
-  function loadImages(limit) {
+  function loadImages1(limit) {
     mediaGalleryDay1.innerHTML = "";
 
     for (let i = 0; i < limit && i < mediaGalleryDay1Data.length; i++) {
@@ -40,27 +63,47 @@ $(document).ready(function () {
       mediaGalleryDay1.appendChild(imgDiv);
     }
   }
-  loadImages(10);
+  loadImages1(10);
 
-  //
-  media1LoadMore.addEventListener("click", function () {
-    if (currentIndex1 < mediaGalleryDay1Data.length) {
-      loadImages(10);
-    }
+  function loadImages2(limit) {
+    mediaGalleryDay2.innerHTML = "";
 
-    if (currentIndex1 >= mediaGalleryDay1Data.length) {
-      media1LoadMore.textContent = "Back";
-    }
+    for (let i = 0; i < limit && i < mediaGalleryDay2Data.length; i++) {
+      const imgData = mediaGalleryDay2Data[i];
 
-    if (media1LoadMore.textContent === "Back") {
-      currentIndex1 = 0;
-      mediaGalleryDay1.innerHTML = "";
-      loadImages(10);
-      media1LoadMore.textContent = "Load More";
-    } else {
-      media1LoadMore.textContent = "Load More";
+      const imgDiv = document.createElement("div");
+      imgDiv.classList.add("masonry-item", imgData.className);
+
+      const imgElement = document.createElement("img");
+      imgElement.src = imgData.img;
+      imgElement.alt = `Gallery Image ${i + 1}`;
+
+      imgDiv.appendChild(imgElement);
+
+      mediaGalleryDay2.appendChild(imgDiv);
     }
-  });
+  }
+  loadImages2(10);
+
+  function loadImage3(limit) {
+    mediaGalleryDay3.innerHTML = "";
+
+    for (let i = 0; i < limit && i < mediaGalleryDay3Data.length; i++) {
+      const imgData = mediaGalleryDay3Data[i];
+
+      const imgDiv = document.createElement("div");
+      imgDiv.classList.add("masonry-item", imgData.className);
+
+      const imgElement = document.createElement("img");
+      imgElement.src = imgData.img;
+      imgElement.alt = `Gallery Image ${i + 1}`;
+
+      imgDiv.appendChild(imgElement);
+
+      mediaGalleryDay3.appendChild(imgDiv);
+    }
+  }
+  loadImage3(10);
 
   const openImage = () => {
     document.querySelectorAll(".masonry-image").forEach((item) => {

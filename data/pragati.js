@@ -1,7 +1,17 @@
 const pragatiGalleryData = [
   {
+    title: "LPG",
+    body: "The stall, themed 'Transition and Sustainability,' focused on showcasing the company's role in facilitating sustainable energy solutions while navigating the evolving dynamics of the LPG business. Interactive displays highlighted key products offerings, digital solutions, and notable milestones in  LPG SBU's journey like the LPG Cavern, offering visitors an immersive and informative experience.",
+    images: [],
+  },
+  {
     title: "Retail SBU",
     body: "The stall, themed 'Retail Transformation,' is designed to reflect HPCL's forward-thinking approach to revolutionizing the retail experience. With modern design elements and interactive displays, it showcases the latest advancements in fuel technology, loyalty programs, and digital payment solutions. The stall highlights our commitment to staying ahead of market trends and delivering seamless, technology-driven services to millions of consumers every day.",
+    images: [],
+  },
+  {
+    title: "SOD SBU",
+    body: "The SBU's stall was themed “Green Future”, suitably aligned with its sustainability and environmentally friendly initiatives. Inside the stall, many innovative displays were featured, such as a “Net Zero Terminal”, highlighting our commitment to reducing carbon footprints. For showcasing the use of cleaner energy for cooking, Ethanol Stove was displayed, and E Flex Fuel Kit was displayed for demonstrating solutions for flexible fuel usage. These displays were complemented with AV presentations, so as to provide to visitors, deeper insights  into these technologies and immersive experience about their impact on the environment.",
     images: [],
   },
   {
@@ -10,34 +20,16 @@ const pragatiGalleryData = [
     images: [],
   },
   {
-    title: "Natural Gas and Renewables",
-    body: "The stall, themed 'Fuelling Future,' was designed to highlight the company's commitment to clean and green energy solutions. This stall was shared between the Natural Gas and Biofuel & Renewable teams, showcasing our diverse portfolio in these sectors. LED screens showcased various projects in natural gas, biofuel, and renewable energy. The design also incorporated cutouts of renewable energy sources like windmills, solar panels, and CBG/CNG dispensing units, creating an immersive visual experience. The miniature model of the CGD Network, along with an interactive screen displayed details of key projects. An exciting feature was the launch of 'Organic Manure' with an AV explaining its benefits and future prospects. ",
-    images: [],
-  },
-  {
     title: "Lubes and Aviation SBU",
     body: "The theme 'Sustainability and Futuristic Technology,' was designed to showcase SBU's commitment to environmentally responsible products and advanced technological solutions. The stall featured a unique and eco-friendly design made from bamboo wood, providing a visually distinct space that reflected the SBU's focus on sustainability. Displays highlighted key aspects of Lubes and Aviation SBUs, including product packs, base oils, models and international market ventures. ",
     images: [],
   },
   {
-    title: "LPG",
-    body: "The stall, themed 'Transition and Sustainability,' focused on showcasing the company's role in facilitating sustainable energy solutions while navigating the evolving dynamics of the LPG business. Interactive displays highlighted key products offerings, digital solutions, and notable milestones in  LPG SBU's journey like the LPG Cavern, offering visitors an immersive and informative experience.",
-    images: [],
-  },
-  {
-    title: "SOD SBU",
-    body: "The SBU's stall was themed “Green Future”, suitably aligned with its sustainability and environmentally friendly initiatives. Inside the stall, many innovative displays were featured, such as a “Net Zero Terminal”, highlighting our commitment to reducing carbon footprints. For showcasing the use of cleaner energy for cooking, Ethanol Stove was displayed, and E Flex Fuel Kit was displayed for demonstrating solutions for flexible fuel usage. These displays were complemented with AV presentations, so as to provide to visitors, deeper insights  into these technologies and immersive experience about their impact on the environment.",
+    title: "Natural Gas and Renewables",
+    body: "The stall, themed 'Fuelling Future,' was designed to highlight the company's commitment to clean and green energy solutions. This stall was shared between the Natural Gas and Biofuel & Renewable teams, showcasing our diverse portfolio in these sectors. LED screens showcased various projects in natural gas, biofuel, and renewable energy. The design also incorporated cutouts of renewable energy sources like windmills, solar panels, and CBG/CNG dispensing units, creating an immersive visual experience. The miniature model of the CGD Network, along with an interactive screen displayed details of key projects. An exciting feature was the launch of 'Organic Manure' with an AV explaining its benefits and future prospects. ",
     images: [],
   },
 ];
-
-// pragatiGalleryData.map((item) => {
-//   for (let i = 1; i <= 10; i++) {
-//     item.images.push({
-//       img: `https://hpcl.parmarketing.agency/images/hpcl/awards/${i}.JPG`,
-//     });
-//   }
-// });
 
 for (let i = 1; i <= 4; i++) {
   pragatiGalleryData[0].images.push({

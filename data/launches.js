@@ -20,7 +20,7 @@ for (let i = 1; i <= 13; i++) {
 }
 //
 const launch4Data = [];
-for (let i = 1; i <= 9; i++) {
+for (let i = 1; i <= 8; i++) {
   launch4Data.push({
     img: `https://hpcl.parmarketing.agency/images/hpcl/launches/launch4/${i}.webp`,
   });
