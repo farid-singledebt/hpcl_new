@@ -31,7 +31,7 @@ const leadershipData = [
   },
   {
     img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/CVO.webp",
-    title: "Address by Chief Vigiliance Officer",
+    title: "Address by Chief Vigilance Officer",
     name: "Leading by Example",
     body: "Our objective is to eliminate complaints all together.",
   },
