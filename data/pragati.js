@@ -11,6 +11,11 @@ const pragatiGalleryData = [
   },
   {
     title: "SOD SBU",
+    body: "Pipelines SBU demonstrated the following through Roto-scopic Display (a moving screen). 1.	The journey of Pipelines since 1985 (starting with Mumbai-Pune Pipeline) to till date 2.	New Pipeline Projects envisaged till 2030 & Sustainable journey. A screen has been set-up displaying video gallery on various innovations/initiatives which are implemented 1st in the industry by Pipelines SBU and a Video on various challenging Pipeline Projects implemented by Pipelines SBU. Further, Smart Pump Station (1st in the industry) at Kalakada Station in Vijayawada Dharmapuri Pipeline was inaugurated by CMD in the presence of CFD. Smart pump stations are equipped with advanced instrumentation, enabling remote monitoring, control, and operation from non-hardship locations. These stations are designed with self-sufficient systems that require minimal human intervention from remote control centers, significantly enhancing safety in hazardous areas. The integration of smart technology allows for equipment management to be handled remotely, reducing on-site personnel requirements. Interactive video feeds provide real-time monitoring of equipment, ensuring operational integrity and supporting informed decision-making.",
+    images: [],
+  },
+  {
+    title: "Engineering project and pipeline",
     body: "The SBU's stall was themed “Green Future”, suitably aligned with its sustainability and environmentally friendly initiatives. Inside the stall, many innovative displays were featured, such as a “Net Zero Terminal”, highlighting our commitment to reducing carbon footprints. For showcasing the use of cleaner energy for cooking, Ethanol Stove was displayed, and E Flex Fuel Kit was displayed for demonstrating solutions for flexible fuel usage. These displays were complemented with AV presentations, so as to provide to visitors, deeper insights  into these technologies and immersive experience about their impact on the environment.",
     images: [],
   },
@@ -46,18 +51,23 @@ for (let i = 1; i <= 9; i++) {
     img: `https://hpcl.parmarketing.agency/images/hpcl/pragati/natural_gas/${i}.webp`,
   });
 }
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 9; i++) {
   pragatiGalleryData[3].images.push({
+    img: `https://hpcl.parmarketing.agency/images/hpcl/pragati/natural_gas/${i}.webp`,
+  });
+}
+for (let i = 1; i <= 10; i++) {
+  pragatiGalleryData[4].images.push({
     img: `https://hpcl.parmarketing.agency/images/hpcl/pragati/lubes/${i}.webp`,
   });
 }
 for (let i = 1; i <= 4; i++) {
-  pragatiGalleryData[4].images.push({
+  pragatiGalleryData[5].images.push({
     img: `https://hpcl.parmarketing.agency/images/hpcl/pragati/petrochemicals/${i}.webp`,
   });
 }
 for (let i = 1; i <= 4; i++) {
-  pragatiGalleryData[5].images.push({
+  pragatiGalleryData[6].images.push({
     img: `https://hpcl.parmarketing.agency/images/hpcl/pragati/petrochemicals/${i}.webp`,
   });
 }
