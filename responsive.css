@@ -1,0 +1,209 @@
+@media screen and (max-width: 1250px) {
+  .navbar .nav-links {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .navbar {
+    height: 96px;
+  }
+  .banner-item img {
+    max-height: calc(100vh - 196px);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .pragati-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .pragati-gallery .pragati-gallery-left {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  .pragati-gallery .pragati-gallery-right {
+    grid-area: 1 / 3 / 2 / 5;
+  }
+  .pragati-gallery .pragati-gallery-bg {
+    grid-area: 1 / 2 / 2 / 5;
+  }
+}
+@media screen and (max-width: 992px) {
+  .presentation-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .launches-button-flex {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .navbar .nav-links {
+    grid-template-columns: 1fr;
+    margin-top: 16px;
+  }
+  .navbar {
+    height: 75px;
+  }
+  .navbar.active {
+    height: auto;
+  }
+  .navbar.active .nav-links li {
+    text-align: center;
+  }
+  .navbar.active .nav-links li a {
+    color: #fff;
+  }
+  .navbar .nav-links li a {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+  .navbar .nav-links li a.active {
+    color: #fff !important;
+  }
+  .prizes-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  .prizes-grid .prizes-card {
+    width: calc(100% - 200px);
+    gap: 16px;
+    padding: 24px 16px;
+  }
+  .prizes-grid .second {
+    margin-top: 0;
+    margin-left: auto;
+  }
+  .special-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .special-grid > div:nth-child(1) {
+    grid-column: span 3;
+  }
+  .header2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .prizes-grid .prizes-card {
+    width: calc(100% - 100px);
+  }
+  .agenda-button-flex,
+  .pragati-button-flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .agenda-button-flex button,
+  .pragati-button-flex button {
+    width: 100%;
+  }
+  .senior-details {
+    flex: 1;
+  }
+  .presentation-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  .presentation-grid .presentation-card {
+    gap: 16px;
+  }
+  .special-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .special-grid > div:nth-child(1) {
+    grid-column: span 2;
+  }
+  .leadership-flex {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 24px;
+  }
+  .leadership-section .leadership-flex:nth-child(even) .leader-image {
+    margin: auto;
+  }
+  .special-flex {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .agenda-card {
+    flex-direction: column;
+  }
+  .pragati-gallery {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  .pragati-gallery .pragati-gallery-bg {
+    display: none;
+  }
+  .pragati-gallery .pragati-gallery-left {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .pragati-gallery .pragati-gallery-right {
+    grid-area: 2 / 1 / 3 / 2;
+    background: var(--blue);
+    border-radius: var(--radius);
+    overflow: hidden;
+    text-align: center;
+    padding: 16px 8px;
+  }
+  .seniors-flex .seniors-card {
+    width: 250px;
+    min-width: 250px;
+  }
+  .banner {
+    display: none;
+  }
+  .mobile-banner {
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .launches-button-flex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .seniors-flex .seniors-card {
+    width: 100%;
+    min-width: 100%;
+  }
+  .senior-details {
+    max-height: 100px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .agenda-button-flex,
+  .pragati-button-flex {
+    grid-template-columns: 1fr;
+  }
+  .awards-button-flex {
+    flex-direction: column;
+  }
+  .awards-button-flex button {
+    width: 100%;
+  }
+  .special-grid {
+    grid-template-columns: 1fr;
+  }
+  .special-grid > div:nth-child(1) {
+    grid-column: span 1;
+  }
+  .prizes-grid .prizes-card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .prizes-grid .prizes-card {
+    width: 100%;
+  }
+  .header {
+    grid-template-columns: 1fr;
+  }
+  .logo,
+  .right-logo {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 350px) {
+  .media-button-flex {
+    flex-direction: column;
+  }
+  .media-button-flex button {
+    width: 100%;
+  }
+}
