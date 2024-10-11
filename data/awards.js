@@ -285,13 +285,14 @@ $(document).ready(function () {
       <td class="fw-bold"> ${item.category}</td>
       <td class="fw-bold"> ${item.winner}</td>
       <td class="text-center">
-        <button class="button button-flex view-awards-image" data-index="${index}" data-bs-toggle="modal" data-bs-target="#imgModal">View <i class="fa-solid fa-eye"></i></button>
+        <button class="button button-flex view-awards-image" data-index="${item.id}" data-bs-toggle="modal" data-bs-target="#imgModal">View <i class="fa-solid fa-eye"></i></button>
       </td>
     </tr>
   `;
       })
       .join("");
     awardsTable.innerHTML = awardsResult;
+    toggleImages();
   }
   loadData();
 
@@ -314,18 +315,20 @@ $(document).ready(function () {
       count = Number(this.getAttribute("data-count"));
       loadData();
       toggleActiveButton();
+      toggleImages();
     });
   });
 
-  document.querySelectorAll(".view-awards-image").forEach((item) => {
-    item.addEventListener("click", function () {
-      const index = this.getAttribute("data-index");
-
-      document
-        .getElementById("modal-img-div")
-        .setAttribute("src", awardsData[index].img);
-      document.getElementById("image-title").innerHTML =
-        awardsData[index].winner;
+  function toggleImages() {
+    document.querySelectorAll(".view-awards-image").forEach((item) => {
+      item.addEventListener("click", function () {
+        const index = parseFloat(this.getAttribute("data-index"));
+        let findImage = awardsData.find((item2) => item2.id === index);
+        document
+          .getElementById("modal-img-div")
+          .setAttribute("src", findImage.img);
+        document.getElementById("image-title").innerHTML = findImage.winner;
+      });
     });
-  });
+  }
 });
