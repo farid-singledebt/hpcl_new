@@ -101,6 +101,11 @@ $(document).ready(function () {
     }" data-bs-toggle="modal" data-bs-target="#carouselModal">
                 View <i class="fa fa-eye"></i>
               </button>
+              <button class="button button-flex readmore-launches" data-index="${index}" data-array="${
+      index + 1
+    }" data-bs-toggle="modal" data-bs-target="#readMore">
+                Read <i class="fa fa-book"></i>
+              </button>
             </div>
             <img src="${item.img}" alt="Image 1" />
           </div>
@@ -143,5 +148,10 @@ $(document).ready(function () {
         startPosition: index,
       });
     });
+  });
+
+  //
+  document.querySelectorAll(".readmore-launches").forEach((item) => {
+    item.addEventListener("click", function () {});
   });
 });

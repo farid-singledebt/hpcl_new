@@ -1,43 +1,42 @@
 const leadershipData = [
   {
+    name: "Shri pushp kumar joshi",
     img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/CMD.webp",
-    title: "Address by Chairman & Managing Director",
-    name: "Guiding the Future",
+    title: "Chairman & Managing Director",
     body: "HPCL is not an organisation, HPCL is a family, HPCL is a way of life, HPCL is a spirit.",
     video: "https://hpcl.parmarketing.agency/videos/hpcl/leadership/C&MD.mp4",
   },
   {
+    name: "Shri amit garg",
     img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/DM.webp",
-    title: "Address by Director Marketing",
-    name: "Inspiring Growth",
+    title: "Director Marketing",
     body: "We are primarily a marketing company and as a marketing company customer comes first.",
     video: "https://hpcl.parmarketing.agency/videos/hpcl/leadership/DM.mp4",
   },
   {
+    name: "Shri rajneesh narang",
     img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/DF.webp",
-    title: "Address by Director Finance",
-    name: "Leading with Purpose",
-    body: "Arise, awake & stop not, ill the goal is reached.",
+    title: "Director Finance",
+    body: "Arise, awake & stop not, till the goal is reached.",
     video: "https://hpcl.parmarketing.agency/videos/hpcl/leadership/DF.mp4",
   },
   {
+    name: "Shri s bharathan",
     img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/DR.webp",
-    title: "Address by Director Refinery",
-    name: "Driving Success",
+    title: "Director Refineries",
     body: "Leaders at our company prioritize teamwork and collaboration, ensuring that every voice is heard and valued.",
     video: "https://hpcl.parmarketing.agency/videos/hpcl/leadership/DR.mp4",
   },
   {
+    name: "Shri k s shetty",
     img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/HR.webp",
-    title: "Address by Director HR",
-    name: "Building for the Future",
+    title: "Director Human Resources",
     body: "It is important we network with our channel partners and build on legacy of relaionship.",
     video: "https://hpcl.parmarketing.agency/videos/hpcl/leadership/DHR.mp4",
   },
   {
     img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/CVO.webp",
-    title: "Address by Chief Vigilance Officer",
-    name: "Leading by Example",
+    title: "Chief Vigilance Officer",
     body: "Our objective is to eliminate complaints all together.",
     video: "https://hpcl.parmarketing.agency/videos/hpcl/leadership/CVO.mp4",
   },
@@ -56,11 +55,14 @@ $(document).ready(function () {
             <img src="${item.img}" alt="" />
           </div>
           <div class="leader-details">
-            <h1>${item.title}</h1>
-            <p class="fw-bold my-3">
+          <p class="fw-bold">
             "${item.body}"
             </p>
-            <button class="button leadership-video-modal-button" data-index="${index}" data-bs-toggle="modal" data-bs-target="#leadershipVideoModal">Click here</button>
+            <h1 class="fw-bold text-capitalize">${item.name}</h1>
+            <h1 class="text-capitalize">${item.title}</h1>
+            
+            
+            <button class="button leadership-video-modal-button mt-2" data-index="${index}" data-bs-toggle="modal" data-bs-target="#leadershipVideoModal">Click here</button>
           </div>
     `;
     leadershipSection.appendChild(box);
