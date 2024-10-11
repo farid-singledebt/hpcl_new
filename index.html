@@ -87,8 +87,8 @@
         <li><a href="#awards">Awards</a></li>
         <li><a href="#pragatiprangan">Pragati Prangan</a></li>
         <li><a href="#launches">Launches</a></li>
-        <li><a href="#leadershipspeaks">leadership speaks </a></li>
         <li><a href="#eventspecial">Event special</a></li>
+        <li><a href="#leadershipspeaks">leadership speaks </a></li>
         <li><a href="#mediagallery">Media Gallery</a></li>
       </ul>
     </nav>
@@ -452,7 +452,6 @@
               src="https://hpcl.parmarketing.agency/images/hpcl/winner/winner1.webp"
               alt="Video Thumbnail"
             />
-            <button id="play-video-button">Play Video</button>
           </div>
 
           <!-- Hidden video element -->
@@ -517,6 +516,42 @@
 
         <div class="launches-flex-container my-4" id="launches-container"></div>
       </div>
+    </div>
+    <!--  -->
+
+    <!-- Event special -->
+    <div class="container p-2 py-5 section" id="eventspecial">
+      <div class="py-4"></div>
+      <div class="title">
+        <h1>Event special</h1>
+      </div>
+
+      <div class="event-video-container mt-4">
+        <div>
+          <div class="event-video-placeholder" id="event-video-placeholder">
+            <img
+              src="https://hpcl.parmarketing.agency/images/hpcl/winner/winner1.webp"
+              alt="Video Thumbnail"
+            />
+          </div>
+
+          <!-- Hidden video element -->
+          <video id="event-video" controls style="display: none">
+            <source src="" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="event-video-overlay" id="event-video-overlay">
+          <button class="button" id="event-video-play-button">
+            <i class="fa-solid fa-play text-white"></i>
+          </button>
+          <button class="button d-none" id="event-video-pause-button">
+            <i class="fa-solid fa-pause text-white"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="special-section mt-4" id="special-div"></div>
     </div>
     <!--  -->
 
@@ -593,16 +628,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <!--  -->
-
-    <!-- Event special -->
-    <div class="container p-2 py-5 section" id="eventspecial">
-      <div class="py-4"></div>
-      <div class="title">
-        <h1>Event special</h1>
-      </div>
-      <div class="special-section mt-4" id="special-div"></div>
     </div>
     <!--  -->
 
@@ -736,6 +761,36 @@
           </div>
           <div class="modal-body p-2">
             <img src="" alt="" id="modal-img-div" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- video modal -->
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      aria-labelledby="videoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header text-center p-2">
+            <p class="fw-bold flex-grow-1" id="video-title"></p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              id="video-modal-close"
+            ></button>
+          </div>
+          <div class="modal-body p-2 video-modal">
+            <video id="modal-video" controls>
+              <source src="" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>

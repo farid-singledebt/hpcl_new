@@ -928,20 +928,24 @@ ul {
   font-size: 1.2rem !important;
   text-align: justify;
 }
-.stall {
+.stall,
+.event-video-container {
   width: 100%;
   max-height: 600px;
   position: relative;
   overflow: hidden;
 }
 .stall img,
-.stall video {
+.stall video,
+.event-video-container img,
+.event-video-container video {
   width: 100%;
   height: 100%;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
-.stall-overlay {
+.stall-overlay,
+.event-video-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -952,10 +956,12 @@ ul {
   display: grid;
   place-items: center;
 }
-.stall-overlay.hide {
+.stall-overlay.hide,
+.event-video-overlay.hide {
   background: none;
 }
-.stall-overlay .button {
+.stall-overlay .button,
+.event-video-overlay .button {
   width: 75px;
   max-width: 75px;
   height: 75px;
@@ -965,10 +971,12 @@ ul {
   background: var(--red);
   position: relative;
 }
-.stall-overlay .button i {
+.stall-overlay .button i,
+.event-video-overlay .button i {
   font-size: 1.5rem !important;
 }
-.stall-overlay .button::before {
+.stall-overlay .button::before,
+.event-video-overlay .button::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -982,10 +990,12 @@ ul {
   border-radius: 50%;
   animation: pulse 2s infinite;
 }
-.stall-overlay #stall-pause-button {
+.stall-overlay #stall-pause-button,
+.event-video-overlay #event-video-pause-button {
   opacity: 0;
 }
-.stall-overlay:hover #stall-pause-button {
+.stall-overlay:hover #stall-pause-button,
+.event-video-overlay:hover #event-video-pause-button {
   opacity: 1;
 }
 @keyframes pulse {
@@ -1140,5 +1150,10 @@ ul {
 .leadership-section .leadership-flex:nth-child(even) .leader-details {
   flex: 1;
 }
-
-/*  */
+.video-modal {
+  width: 100%;
+}
+.video-modal video {
+  width: 100%;
+  max-height: 600px;
+}
