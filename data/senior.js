@@ -81,7 +81,7 @@ $(document).ready(function () {
         />
 
         <div class="senior-details">
-          <p class="fw-bold text-capitalize">${item.name}</p>
+          <p class="fw-bold text-uppercase">${item.name}</p>
           <p class="text-capitalize">${item.designation}</p>
         </div>
       </div>
