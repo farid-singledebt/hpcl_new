@@ -766,28 +766,58 @@
       </div>
     </div>
 
-    <!-- video modal -->
+    <!-- event video modal -->
     <div
       class="modal fade"
-      id="videoModal"
+      id="eventVideoModal"
       tabindex="-1"
-      aria-labelledby="videoModalLabel"
+      aria-labelledby="eventVideoModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
           <div class="modal-header text-center p-2">
-            <p class="fw-bold flex-grow-1" id="video-title"></p>
+            <p class="fw-bold flex-grow-1" id="event-video-title"></p>
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
-              id="video-modal-close"
+              id="event-video-modal-close"
             ></button>
           </div>
           <div class="modal-body p-2 video-modal">
-            <video id="modal-video" controls>
+            <video id="event-modal-video" controls>
+              <source src="" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- leadership video modal -->
+    <div
+      class="modal fade"
+      id="leadershipVideoModal"
+      tabindex="-1"
+      aria-labelledby="leadershipVideoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header text-center p-2">
+            <p class="fw-bold flex-grow-1" id="leadership-video-title"></p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              id="leadership-video-modal-close"
+            ></button>
+          </div>
+          <div class="modal-body p-2 video-modal">
+            <video id="leadership-modal-video" controls>
               <source src="" type="video/mp4" />
               Your browser does not support the video tag.
             </video>

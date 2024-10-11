@@ -49,7 +49,7 @@ $(document).ready(function () {
                 alt=""
               />
               <div class="special-overlay">
-          <button class="button video-modal-button" data-index="${index}" data-bs-toggle="modal" data-bs-target="#videoModal">
+          <button class="button video-modal-button" data-index="${index}" data-bs-toggle="modal" data-bs-target="#eventVideoModal">
             <i class="fa-solid fa-play text-white"></i>
           </button>
         </div>
@@ -71,19 +71,21 @@ $(document).ready(function () {
   videoModalButton.forEach((item) => {
     item.addEventListener("click", function () {
       const index = this.getAttribute("data-index");
-      let modalVideo = document.getElementById("modal-video");
+      let modalVideo = document.getElementById("event-modal-video");
       modalVideo.querySelector("source").src = specialData[index].video;
       modalVideo.load();
       modalVideo.play();
       //
-      document.getElementById("video-title").innerHTML =
+      document.getElementById("event-video-title").innerHTML =
         specialData[index].title;
     });
   });
 
   //
-  document.getElementById("video-modal-close").addEventListener("click", () => {
-    let modalVideo = document.getElementById("modal-video");
-    modalVideo.pause();
-  });
+  document
+    .getElementById("event-video-modal-close")
+    .addEventListener("click", () => {
+      let modalVideo = document.getElementById("event-modal-video");
+      modalVideo.pause();
+    });
 });
