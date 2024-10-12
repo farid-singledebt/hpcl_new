@@ -280,64 +280,69 @@ $(document).ready(function () {
   }, {});
   console.log(categorizedAwards);
   //
-  const awardsTable = document.getElementById("awards-table");
-  let start = 0;
-  let end = 10;
-  function loadData() {
-    let awardsResult = "";
-    categorizedAwards
-      .slice(start, end)
-      .map((item, index) => {
-        awardsResult += `
-    <tr>
-      <td class="fw-bold">${item.SBU}</td>
-      <td class="fw-bold"> ${item.category}</td>
-      <td class="fw-bold"> ${item.winner}</td>
-      <td class="text-center">
-        <button class="button button-flex view-awards-image" data-index="${item.id}" data-bs-toggle="modal" data-bs-target="#imgModal">View <i class="fa-solid fa-eye"></i></button>
-      </td>
-    </tr>
-  `;
-      })
-      .join("");
-    awardsTable.innerHTML = awardsResult;
-    toggleImages();
-  }
-  loadData();
+  const awardsContainer = document.getElementById("awards-accordion");
 
-  const paginationButtons = document.querySelectorAll(".pagination-button");
-  let count = 1;
-  const toggleActiveButton = () => {
-    paginationButtons.forEach((item) => {
-      item.classList.remove("active");
-      if (Number(item.getAttribute("data-count")) === count) {
-        item.classList.add("active");
+  for (const [sbu, awards] of Object.entries(categorizedAwards)) {
+    const accContainer = document.createElement("div");
+    accContainer.classList.add("acc-container");
+
+    const accHead = document.createElement("div");
+    accHead.classList.add("acc-head");
+    accHead.innerHTML = `
+    <h2>${sbu}</h2>
+    <div>
+      <button class="button">
+        <i class="fa fa-eye"></i>
+      </button>
+    </div>
+  `;
+
+    accContainer.appendChild(accHead);
+
+    const accBodyContainer = document.createElement("div");
+    accBodyContainer.style.display = "none";
+
+    awards.forEach((award) => {
+      const accBody = document.createElement("div");
+      accBody.classList.add("acc-body");
+
+      accBody.innerHTML = `
+      <div>
+        <img src="${award.img}" alt="${award.category}" class="acc-img show-acc-image" data-bs-toggle="modal" data-bs-target="#imgModal" />
+      </div>
+      <div>
+        <p>
+          <span class="fw-bold">Category</span>: ${award.category}
+        </p>
+        <p>
+          <span class="fw-bold">Winner</span>: ${award.winner}
+        </p>
+      </div>
+    `;
+
+      accBodyContainer.appendChild(accBody);
+    });
+
+    accContainer.appendChild(accBodyContainer);
+
+    accHead.addEventListener("click", () => {
+      if (accBodyContainer.style.display === "none") {
+        accBodyContainer.style.display = "block";
+        accContainer.classList.add("active");
+      } else {
+        accBodyContainer.style.display = "none";
+        accContainer.classList.remove("active");
       }
     });
-  };
-  toggleActiveButton();
 
-  paginationButtons.forEach((item) => {
+    awardsContainer.appendChild(accContainer);
+  }
+
+  let showAccImage = document.querySelectorAll(".show-acc-image");
+  showAccImage.forEach((item) => {
     item.addEventListener("click", function () {
-      start = this.getAttribute("data-start");
-      end = this.getAttribute("data-end");
-      count = Number(this.getAttribute("data-count"));
-      loadData();
-      toggleActiveButton();
-      toggleImages();
+      let img = this.getAttribute("src");
+      document.getElementById("modal-img-div").setAttribute("src", img);
     });
   });
-
-  function toggleImages() {
-    document.querySelectorAll(".view-awards-image").forEach((item) => {
-      item.addEventListener("click", function () {
-        const index = parseFloat(this.getAttribute("data-index"));
-        let findImage = categorizedAwards.find((item2) => item2.id === index);
-        document
-          .getElementById("modal-img-div")
-          .setAttribute("src", findImage.img);
-        document.getElementById("image-title").innerHTML = findImage.winner;
-      });
-    });
-  }
 });

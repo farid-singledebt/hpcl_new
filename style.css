@@ -271,34 +271,8 @@ img {
 thead {
   background: linear-gradient(to right, var(--blue), var(--red));
 }
-.table {
-  min-width: 576px;
-  background: url(https://hpcl.parmarketing.agency/images/hpcl/awards/awards-glammer.webp)
-    center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  box-shadow: var(--shadow);
-  border-radius: 8px;
-  overflow: hidden;
-  text-align: center;
-}
-th,
-td {
-  padding: 16px 8px !important;
-  background: transparent !important;
-}
-th {
-  color: #fff !important;
-}
-.table-striped > tbody > tr:nth-of-type(odd) > * {
-  --bs-table-color-type: var(--bs-table-striped-color);
-  --bs-table-bg-type: var(--bs-table-striped-bg);
-}
 .overflow-container {
   overflow-x: auto;
-}
-.overflow-container .table {
-  min-width: 992px;
 }
 .overflow-container::-webkit-scrollbar,
 .presentation-scroll::-webkit-scrollbar {
@@ -1160,4 +1134,36 @@ ul {
 .activities-container .activities-item {
   width: 100%;
   height: 600px;
+}
+.acc-container {
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 8px;
+  margin-bottom: 8px;
+  transition: var(--transition);
+}
+.acc-container.active {
+  background: linear-gradient(130deg, var(--blue), var(--red));
+}
+.acc-container .acc-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background: #fff;
+  border-radius: var(--radius);
+}
+.acc-container .acc-body {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  background: #fff;
+  border-radius: var(--radius);
+}
+.acc-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
