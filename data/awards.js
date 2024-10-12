@@ -271,12 +271,21 @@ const awardsData = [
 ];
 
 $(document).ready(function () {
+  const categorizedAwards = awardsData.reduce((acc, current) => {
+    if (!acc[current.SBU]) {
+      acc[current.SBU] = [];
+    }
+    acc[current.SBU].push(current);
+    return acc;
+  }, {});
+  console.log(categorizedAwards);
+  //
   const awardsTable = document.getElementById("awards-table");
   let start = 0;
   let end = 10;
   function loadData() {
     let awardsResult = "";
-    awardsData
+    categorizedAwards
       .slice(start, end)
       .map((item, index) => {
         awardsResult += `
@@ -323,7 +332,7 @@ $(document).ready(function () {
     document.querySelectorAll(".view-awards-image").forEach((item) => {
       item.addEventListener("click", function () {
         const index = parseFloat(this.getAttribute("data-index"));
-        let findImage = awardsData.find((item2) => item2.id === index);
+        let findImage = categorizedAwards.find((item2) => item2.id === index);
         document
           .getElementById("modal-img-div")
           .setAttribute("src", findImage.img);
