@@ -71,9 +71,11 @@ $(document).ready(function () {
       displayedImages1 = 10;
       renderImages1(displayedImages1);
       loadMoreButton1.textContent = "Load more";
+      document
+        .getElementById("mediagallery")
+        .scrollIntoView({ behavior: "smooth", block: "start" });
     }
   });
-  // media 1 end
 
   // media 2 start
   const mediaGalleryDay2 = document.getElementById("media-gallery-day2");
@@ -113,11 +115,13 @@ $(document).ready(function () {
       displayedImages2 = 10;
       renderImages2(displayedImages2);
       loadMoreButton2.textContent = "Load more";
+      document
+        .getElementById("mediagallery")
+        .scrollIntoView({ behavior: "smooth", block: "start" });
     }
   });
-  // media 2 end
 
-  // media 2 start
+  // media 3 start
   const mediaGalleryDay3 = document.getElementById("media-gallery-day3");
   const loadMoreButton3 = document.getElementById("media3-load-more");
   let displayedImages3 = 10;
@@ -155,7 +159,9 @@ $(document).ready(function () {
       displayedImages3 = 10;
       renderImages3(displayedImages3);
       loadMoreButton3.textContent = "Load more";
+      document
+        .getElementById("mediagallery")
+        .scrollIntoView({ behavior: "smooth", block: "start" });
     }
   });
-  // media 2 end
 });
