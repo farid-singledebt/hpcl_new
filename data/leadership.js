@@ -35,6 +35,7 @@ const leadershipData = [
     video: "https://hpcl.parmarketing.agency/videos/hpcl/leadership/DHR.mp4",
   },
   {
+    name : "Ashwini kumar tiwari",
     img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/CVO.webp",
     title: "Chief Vigilance Officer",
     body: "Our objective is to eliminate complaints all together.",
