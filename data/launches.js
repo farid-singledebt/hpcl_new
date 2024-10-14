@@ -50,7 +50,7 @@ const launchTitles = [
     title: "R&D & CS&P",
     body: "Click below button to view images of launches",
     content:
-      "There is a famous Quote “The future belongs to those who believe in the beauty of their dreams” Dreams are achieved with goals, as they provide the roadmap to turn aspirations into reality. With the Vision and Hope for HPCL beating the competitors by miles. The Mission 60 AV represents HPCL's ambitious initiative aimed at achieving excellence and growth through strategic interventions and innovations",
+      "Handing over of Products by HPGRDC to Marketing was done during Marketing Conclave , for Petrochemical SBU HP-3DPP & HP- NanoKool , 3D printable polypropylene was developed for Fused Deposition Modeling (FDM) ,Solar reflectance coatings called HP NanOkool are designed to enhance the reflectivity of surfaces. For Lubes SBU HP-PCR HDPE & HP-MWF to improve the mechanical properties at par with virgin HDPE lube bottle. HP MWF significantly prolongs the lifespan of the metalworking fluid. CS & P did the Inauguration of Automated Processes through Robotic Process Automation, Safety-GPT and HSE Dashboards on HSE portal & Metaverse for LPG Bottling Plant.",
   },
   {
     title: "Mission 60",
