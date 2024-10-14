@@ -1122,7 +1122,8 @@ ul {
   height: 600px;
 }
 #awards-accordion {
-  background: url("./images/awards/awards-glammer.webp") center no-repeat;
+  background: url("https://hpcl.parmarketing.agency/images/hpcl/awards/awards-glammer.webp")
+    center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
