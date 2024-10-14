@@ -37,22 +37,32 @@ const launchTitles = [
   {
     title: "LPG",
     body: "Click below button to view images of launches",
+    content:
+      "A service for Domestic HP Gas customers. HP Gas Suvidha Club service shall offer  various benefits, exclusive services, and added conveniences to LPG consumers thereby improving their overall experience with HP Gas services. Membership usually involves a nominal fee of Rs. 354/- per year for one HP Gas customer.  The benefits offered outweigh the cost, making it a valuable addition for regular LPG users. This is first such service of  its kind offered by any OMC so far",
   },
   {
     title: "Lubes",
     body: "Click below button to view images of launches",
+    content:
+      "The Lubes SBU successfully launched Futur-X, its premium range of lubricants, as part of its ongoing business transformation. Recognized as one of India's largest lubricant players, we have traditionally been known for offering value-for-money products. However, with the launch of Futur-X, the aim was to elevate our brand through premiumization",
   },
   {
-    title: "R&D",
+    title: "R&D & CS&P",
     body: "Click below button to view images of launches",
+    content:
+      "There is a famous Quote “The future belongs to those who believe in the beauty of their dreams” Dreams are achieved with goals, as they provide the roadmap to turn aspirations into reality. With the Vision and Hope for HPCL beating the competitors by miles. The Mission 60 AV represents HPCL's ambitious initiative aimed at achieving excellence and growth through strategic interventions and innovations",
   },
   {
     title: "Mission 60",
     body: "Click below button to view images of launches",
+    content:
+      "There is a famous Quote “The future belongs to those who believe in the beauty of their dreams” Dreams are achieved with goals, as they provide the roadmap to turn aspirations into reality.With the Vision and Hope for HPCL beating the competitors by miles. The Mission 60 AV represents HPCL's ambitious initiative aimed at achieving excellence and growth through strategic interventions and innovations",
   },
   {
     title: "Digital initiatives",
     body: "Click below button to view images of launches",
+    content:
+      "TT Sentry integrates advanced Vehicle Tracking System technology to monitor tank trucks' Position, Velocity, and Time in real time. This automated system enforces discipline through system generated alerts and compares data with the Transport Discipline Guidelines to detect and take actions on deviations. CRIS empowers our team with advanced analytics, intelligent dashboards, and real-time alerts, ensuring optimal operations and proactive decision-making. This ground-breaking system supports all stakeholders, from dealers and engineering officers to regional managers and HQ officers, enhancing efficiency and operational transparency",
   },
 ];
 
@@ -152,6 +162,12 @@ $(document).ready(function () {
 
   //
   document.querySelectorAll(".readmore-launches").forEach((item) => {
-    item.addEventListener("click", function () {});
+    item.addEventListener("click", function () {
+      const index = this.getAttribute("data-index");
+      document.getElementById("read-more-title").innerHTML =
+        launchTitles[index].title;
+      document.getElementById("read-more-div").innerHTML =
+        launchTitles[index].content;
+    });
   });
 });

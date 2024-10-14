@@ -6,13 +6,13 @@ const specialData = [
     video:
       "https://hpcl.parmarketing.agency/videos/hpcl/event_special/nsnj.mp4",
   },
-  {
-    img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/3.webp",
-    title: "Mission 60",
-    body: "The Mission 60 AV represents HPCL's ambitious initiative aimed at achieving excellence and growth through strategic interventions and innovations. This AV outlines the company's roadmap towards reaching significant milestones across various business verticals, so as to collectively exceed volume of 60MMT by FY 26' completion.",
-    video:
-      "https://hpcl.parmarketing.agency/videos/hpcl/event_special/mission60.mp4",
-  },
+  // {
+  //   img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/3.webp",
+  //   title: "Mission 60",
+  //   body: "The Mission 60 AV represents HPCL's ambitious initiative aimed at achieving excellence and growth through strategic interventions and innovations. This AV outlines the company's roadmap towards reaching significant milestones across various business verticals, so as to collectively exceed volume of 60MMT by FY 26' completion.",
+  //   video:
+  //     "https://hpcl.parmarketing.agency/videos/hpcl/event_special/mission60.mp4",
+  // },
   {
     img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/3.webp",
     title: "'Heroes of Marketing'",
