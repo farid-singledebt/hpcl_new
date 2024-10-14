@@ -278,7 +278,6 @@ $(document).ready(function () {
     acc[current.SBU].push(current);
     return acc;
   }, {});
-  console.log(categorizedAwards);
   //
   const awardsContainer = document.getElementById("awards-accordion");
 
@@ -302,7 +301,7 @@ $(document).ready(function () {
     const accBodyContainer = document.createElement("div");
     accBodyContainer.style.display = "none";
 
-    awards.forEach((award) => {
+    awards.forEach((award, index) => {
       const accBody = document.createElement("div");
       accBody.classList.add("acc-body");
 

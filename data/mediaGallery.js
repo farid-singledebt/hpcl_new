@@ -33,85 +33,129 @@ $(document).ready(function () {
     });
   }
 
+  // media 1 start
   const mediaGalleryDay1 = document.getElementById("media-gallery-day1");
-  const media1LoadMore = document.getElementById("media1-load-more");
-  let currentIndex1 = 0;
-  //
-  const mediaGalleryDay2 = document.getElementById("media-gallery-day2");
-  const media2LoadMore = document.getElementById("media2-load-more");
-  let currentIndex2 = 0;
-  //
-  const mediaGalleryDay3 = document.getElementById("media-gallery-day3");
-  const media3LoadMore = document.getElementById("media3-load-more");
-  let currentIndex3 = 0;
+  const loadMoreButton1 = document.getElementById("media1-load-more");
+  let displayedImages1 = 10;
 
-  function loadImages1(limit) {
+  function renderImages1(limit) {
     mediaGalleryDay1.innerHTML = "";
 
     for (let i = 0; i < limit && i < mediaGalleryDay1Data.length; i++) {
-      const imgData = mediaGalleryDay1Data[i];
+      const item = mediaGalleryDay1Data[i];
 
-      const imgDiv = document.createElement("div");
-      imgDiv.classList.add("masonry-item", imgData.className);
+      const masonryItem = document.createElement("div");
+      masonryItem.classList.add("masonry-item", item.className);
 
       const imgElement = document.createElement("img");
-      imgElement.src = imgData.img;
+      imgElement.src = item.img;
       imgElement.alt = `Gallery Image ${i + 1}`;
 
-      imgDiv.appendChild(imgElement);
+      masonryItem.appendChild(imgElement);
 
-      mediaGalleryDay1.appendChild(imgDiv);
+      mediaGalleryDay1.appendChild(masonryItem);
     }
   }
-  loadImages1(10);
 
-  function loadImages2(limit) {
+  renderImages1(displayedImages1);
+
+  loadMoreButton1.addEventListener("click", () => {
+    if (displayedImages1 < mediaGalleryDay1Data.length) {
+      displayedImages1 += 10;
+      renderImages1(displayedImages1);
+
+      if (displayedImages1 >= mediaGalleryDay1Data.length) {
+        loadMoreButton1.textContent = "Go back";
+      }
+    } else {
+      displayedImages1 = 10;
+      renderImages1(displayedImages1);
+      loadMoreButton1.textContent = "Load more";
+    }
+  });
+  // media 1 end
+
+  // media 2 start
+  const mediaGalleryDay2 = document.getElementById("media-gallery-day2");
+  const loadMoreButton2 = document.getElementById("media2-load-more");
+  let displayedImages2 = 10;
+
+  function renderImages2(limit) {
     mediaGalleryDay2.innerHTML = "";
 
     for (let i = 0; i < limit && i < mediaGalleryDay2Data.length; i++) {
-      const imgData = mediaGalleryDay2Data[i];
+      const item = mediaGalleryDay2Data[i];
 
-      const imgDiv = document.createElement("div");
-      imgDiv.classList.add("masonry-item", imgData.className);
+      const masonryItem = document.createElement("div");
+      masonryItem.classList.add("masonry-item", item.className);
 
       const imgElement = document.createElement("img");
-      imgElement.src = imgData.img;
+      imgElement.src = item.img;
       imgElement.alt = `Gallery Image ${i + 1}`;
 
-      imgDiv.appendChild(imgElement);
+      masonryItem.appendChild(imgElement);
 
-      mediaGalleryDay2.appendChild(imgDiv);
+      mediaGalleryDay2.appendChild(masonryItem);
     }
   }
-  loadImages2(10);
 
-  function loadImage3(limit) {
+  renderImages2(displayedImages2);
+
+  loadMoreButton2.addEventListener("click", () => {
+    if (displayedImages2 < mediaGalleryDay2Data.length) {
+      displayedImages2 += 10;
+      renderImages2(displayedImages2);
+
+      if (displayedImages2 >= mediaGalleryDay2Data.length) {
+        loadMoreButton2.textContent = "Go back";
+      }
+    } else {
+      displayedImages2 = 10;
+      renderImages2(displayedImages2);
+      loadMoreButton2.textContent = "Load more";
+    }
+  });
+  // media 2 end
+
+  // media 2 start
+  const mediaGalleryDay3 = document.getElementById("media-gallery-day3");
+  const loadMoreButton3 = document.getElementById("media3-load-more");
+  let displayedImages3 = 10;
+
+  function renderImages3(limit) {
     mediaGalleryDay3.innerHTML = "";
 
     for (let i = 0; i < limit && i < mediaGalleryDay3Data.length; i++) {
-      const imgData = mediaGalleryDay3Data[i];
+      const item = mediaGalleryDay3Data[i];
 
-      const imgDiv = document.createElement("div");
-      imgDiv.classList.add("masonry-item", imgData.className);
+      const masonryItem = document.createElement("div");
+      masonryItem.classList.add("masonry-item", item.className);
 
       const imgElement = document.createElement("img");
-      imgElement.src = imgData.img;
+      imgElement.src = item.img;
       imgElement.alt = `Gallery Image ${i + 1}`;
 
-      imgDiv.appendChild(imgElement);
+      masonryItem.appendChild(imgElement);
 
-      mediaGalleryDay3.appendChild(imgDiv);
+      mediaGalleryDay3.appendChild(masonryItem);
     }
   }
-  loadImage3(10);
 
-  const openImage = () => {
-    document.querySelectorAll(".masonry-image").forEach((item) => {
-      item.addEventListener("click", function () {
-        document
-          .getElementById("modal-img-div")
-          .setAttribute("src", this.getAttribute("src"));
-      });
-    });
-  };
+  renderImages3(displayedImages3);
+
+  loadMoreButton3.addEventListener("click", () => {
+    if (displayedImages3 < mediaGalleryDay3Data.length) {
+      displayedImages3 += 10;
+      renderImages3(displayedImages3);
+
+      if (displayedImages3 >= mediaGalleryDay3Data.length) {
+        loadMoreButton3.textContent = "Go back";
+      }
+    } else {
+      displayedImages3 = 10;
+      renderImages3(displayedImages3);
+      loadMoreButton3.textContent = "Load more";
+    }
+  });
+  // media 2 end
 });
