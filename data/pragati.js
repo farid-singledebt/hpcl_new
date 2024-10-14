@@ -189,7 +189,7 @@ $(document).ready(function () {
         center: true,
         nav: false,
         dots: false,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 3000,
         responsive: {
           0: {

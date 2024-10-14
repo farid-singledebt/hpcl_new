@@ -1171,3 +1171,6 @@ ul {
   opacity: 1;
   border: 5px solid var(--red);
 }
+#center-image {
+  max-height: 400px;
+}
