@@ -307,7 +307,7 @@ $(document).ready(function () {
 
       accBody.innerHTML = `
       <div>
-        <img src="${award.img}" alt="${award.category}" class="acc-img show-acc-image" data-bs-toggle="modal" data-bs-target="#imgModal" />
+        <img src="${award.img}" alt="${award.category}" data-category="${award.category}" class="acc-img show-acc-image" data-bs-toggle="modal" data-bs-target="#imgModal" />
       </div>
       <div>
         <p>
@@ -342,6 +342,8 @@ $(document).ready(function () {
     item.addEventListener("click", function () {
       let img = this.getAttribute("src");
       document.getElementById("modal-img-div").setAttribute("src", img);
+      document.getElementById("image-title").innerHTML =
+        this.getAttribute("data-category");
     });
   });
 });

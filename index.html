@@ -346,7 +346,7 @@
           </button>
         </div>
       </div>
-      <div class="awards-div">
+      <div class="awards-div pb-4">
         <div class="container p-2" id="awards-accordion">
           <!-- <div class="acc-container">
             <div class="acc-head">
@@ -791,6 +791,38 @@
           </div>
           <div class="modal-body p-2">
             <div class="owl-carousel owl-theme" id="modal-carousel"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- display modal -->
+    <div
+      class="modal fade"
+      id="displayModal"
+      tabindex="-1"
+      aria-labelledby="displayModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header text-center p-2">
+            <p class="fw-bold flex-grow-1" id="display-image-title"></p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-2">
+            <div id="center-image-display" style="margin-bottom: 16px">
+              <img src="" alt="Center Image" id="center-image" />
+            </div>
+            <div
+              class="owl-carousel display-carousel owl-theme"
+              id="display-modal"
+            ></div>
           </div>
         </div>
       </div>
