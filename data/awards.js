@@ -278,7 +278,7 @@ $(document).ready(function () {
     acc[current.SBU].push(current);
     return acc;
   }, {});
-  //
+
   const awardsContainer = document.getElementById("awards-accordion");
 
   for (const [sbu, awards] of Object.entries(categorizedAwards)) {
@@ -291,7 +291,7 @@ $(document).ready(function () {
     <h2>${sbu}</h2>
     <div>
       <button class="button">
-        <i class="fa fa-eye"></i>
+        <i class="fa fa-plus"></i>
       </button>
     </div>
   `;
@@ -307,15 +307,16 @@ $(document).ready(function () {
 
       accBody.innerHTML = `
       <div>
-        <img src="${award.img}" alt="${award.category}" data-category="${award.category}" class="acc-img show-acc-image" data-bs-toggle="modal" data-bs-target="#imgModal" />
+        <img src="${award.img}" alt="${award.category}" data-category="${award.category}" class="acc-img" />
       </div>
       <div>
-        <p>
-          <span class="fw-bold">Category</span>: ${award.category}
-        </p>
-        <p>
-          <span class="fw-bold">Winner</span>: ${award.winner}
-        </p>
+        <h2>Category: ${award.category}
+        </h2>
+        <h2>Winner: ${award.winner}
+        </h2>
+      </div>
+      <div class="flex-grow-1 text-end">
+        <button class="button show-acc-image" style="min-width: 165px" data-img="${award.img}" data-category="${award.category}" data-bs-toggle="modal" data-bs-target="#imgModal">View Image <i class="fa fa-eye"></i></button>
       </div>
     `;
 
@@ -325,12 +326,19 @@ $(document).ready(function () {
     accContainer.appendChild(accBodyContainer);
 
     accHead.addEventListener("click", () => {
+      const icon = accHead.querySelector("i");
       if (accBodyContainer.style.display === "none") {
         accBodyContainer.style.display = "block";
         accContainer.classList.add("active");
+        // Change the icon to minus
+        icon.classList.remove("fa-plus");
+        icon.classList.add("fa-minus");
       } else {
         accBodyContainer.style.display = "none";
         accContainer.classList.remove("active");
+        // Change the icon back to plus
+        icon.classList.remove("fa-minus");
+        icon.classList.add("fa-plus");
       }
     });
 
@@ -340,7 +348,7 @@ $(document).ready(function () {
   let showAccImage = document.querySelectorAll(".show-acc-image");
   showAccImage.forEach((item) => {
     item.addEventListener("click", function () {
-      let img = this.getAttribute("src");
+      let img = this.getAttribute("data-img");
       document.getElementById("modal-img-div").setAttribute("src", img);
       document.getElementById("image-title").innerHTML =
         this.getAttribute("data-category");

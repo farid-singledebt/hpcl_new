@@ -18,7 +18,7 @@ const pragatiGalleryData = [
     body: "Pipelines SBU demonstrated the following through Roto-scopic Display (a moving screen). 1.	The journey of Pipelines since 1985 (starting with Mumbai-Pune Pipeline) to till date 2.	New Pipeline Projects envisaged till 2030 & Sustainable journey. A screen has been set-up displaying video gallery on various innovations/initiatives which are implemented 1st in the industry by Pipelines SBU and a Video on various challenging Pipeline Projects implemented by Pipelines SBU. Further, Smart Pump Station (1st in the industry) at Kalakada Station in Vijayawada Dharmapuri Pipeline was inaugurated by CMD in the presence of CFD. Smart pump stations are equipped with advanced instrumentation, enabling remote monitoring, control, and operation from non-hardship locations. These stations are designed with self-sufficient systems that require minimal human intervention from remote control centers, significantly enhancing safety in hazardous areas. The integration of smart technology allows for equipment management to be handled remotely, reducing on-site personnel requirements. Interactive video feeds provide real-time monitoring of equipment, ensuring operational integrity and supporting informed decision-making.",
     images: [],
     displayImage:
-      "https://hpcl.parmarketing.agency/images/hpcl/pragati/sod_sbu/1.webp",
+      "https://hpcl.parmarketing.agency/images/hpcl/pragati/sod_sbu/4.webp",
   },
   {
     title: "Engineering project and pipeline",
@@ -39,7 +39,7 @@ const pragatiGalleryData = [
     body: "The theme 'Sustainability and Futuristic Technology,' was designed to showcase SBU's commitment to environmentally responsible products and advanced technological solutions. The stall featured a unique and eco-friendly design made from bamboo wood, providing a visually distinct space that reflected the SBU's focus on sustainability. Displays highlighted key aspects of Lubes and Aviation SBUs, including product packs, base oils, models and international market ventures. ",
     images: [],
     displayImage:
-      "https://hpcl.parmarketing.agency/images/hpcl/pragati/lubes/1.webp",
+      "https://hpcl.parmarketing.agency/images/hpcl/pragati/lubes/10.webp",
   },
   {
     title: "Natural Gas and Renewables",

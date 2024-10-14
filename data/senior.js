@@ -105,4 +105,5 @@ document.getElementById("all-seniors").addEventListener("click", function () {
   document
     .getElementById("modal-img-div")
     .setAttribute("src", this.getAttribute("src"));
+  document.getElementById("image-title").innerHTML = "Group Photo";
 });

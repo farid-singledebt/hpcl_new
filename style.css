@@ -542,6 +542,7 @@ footer {
 }
 .pragati-gallery .pragati-gallery-left img {
   height: 350px;
+  object-position: top;
 }
 .pragati-gallery .pragati-gallery-right {
   grid-area: 1 / 4 / 2 / 5;
@@ -1138,10 +1139,6 @@ ul {
   transition: var(--transition);
   border: 5px solid transparent;
   border-bottom: 5px solid #fff;
-}
-.acc-container.active {
-  /* background: linear-gradient(130deg, var(--blue), var(--red)); */
-  /* border: 5px solid #fff; */
 }
 .acc-container .acc-head {
   display: flex;
