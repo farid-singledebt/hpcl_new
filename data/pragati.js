@@ -15,7 +15,7 @@ const pragatiGalleryData = [
   },
   {
     title: "SOD SBU",
-    body: "The SBU’s stall was themed “Green Future”, suitably aligned with its sustainability and environmentally friendly initiatives. Inside the stall, many innovative displays were featured, such as a “Net Zero Terminal”, highlighting our commitment to reducing carbon footprints. For showcasing the use of cleaner energy for cooking, Ethanol Stove was displayed; and E Flex Fuel Kit was displayed for demonstrating solutions for flexible fuel usage. These displays were complemented with AV presentations, so as to provide to visitors, deeper insights  into these technologies and immersive experience about their impact on the environment",
+    body: "The SBU’s stall was themed “Green Future”, suitably aligned with its sustainability and environmentally friendly initiatives. Inside the stall, many innovative displays were featured, such as a “Net Zero Terminal”, highlighting our commitment to reducing carbon footprints. For showcasing the use of cleaner energy for cooking, Ethanol Stove was displayed; and E Flex Fuel Kit was displayed for demonstrating solutions for flexible fuel usage. These displays were complemented with AV presentations, so as to provide to visitors, deeper insights  into these technologies and immersive experience about their impact on the environment.",
     images: [],
     displayImage:
       "https://hpcl.parmarketing.agency/images/hpcl/pragati/sod_sbu/4.webp",
