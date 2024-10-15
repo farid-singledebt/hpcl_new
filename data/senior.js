@@ -62,7 +62,7 @@ const seniorData = [
     designation: "Cheif general manager - HSE marketing",
   },
   {
-    img: "https://hpcl.parmarketing.agency/images/hpcl/seniors/5.webp",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/seniors/3.webp",
     name: "P Veerabhadra rao",
     designation: "Executive director - Visakh refinery modernisation project",
   },
