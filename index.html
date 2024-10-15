@@ -426,7 +426,7 @@
         <div class="video-container">
           <div class="stall-placeholder" id="stall-placeholder">
             <img
-              src="https://hpcl.parmarketing.agency/images/hpcl/winner/winner1.webp"
+              src="https://hpcl.parmarketing.agency/images/hpcl/pragati/pragati_prangan_stall_thumbnail.webp"
               alt="Video Thumbnail"
             />
           </div>
@@ -500,6 +500,34 @@
       <div class="title pt-5 my-5">
         <h1>Activities</h1>
       </div>
+
+      <div
+        class="event-video-container my-4"
+        style="height: 100%; max-height: 100%"
+      >
+        <div>
+          <div class="event-video-placeholder" id="event-video-placeholder">
+            <img
+              src="https://hpcl.parmarketing.agency/images/hpcl/activities/event_walkthrough_thumbnail.webp"
+              alt="Video Thumbnail"
+            />
+          </div>
+
+          <video id="event-video" controls style="display: none">
+            <source src="" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="event-video-overlay" id="event-video-overlay">
+          <button class="button" id="event-video-play-button">
+            <i class="fa-solid fa-play text-white"></i>
+          </button>
+          <button class="button d-none" id="event-video-pause-button">
+            <i class="fa-solid fa-pause text-white"></i>
+          </button>
+        </div>
+      </div>
+
       <div class="banner-container w-100">
         <div class="banner-carousel owl-carousel" id="activities-carousel">
           <div class="banner-item">
@@ -582,31 +610,6 @@
       <div class="py-4"></div>
       <div class="title">
         <h1>Event special</h1>
-      </div>
-
-      <div class="event-video-container mt-4">
-        <div>
-          <div class="event-video-placeholder" id="event-video-placeholder">
-            <img
-              src="https://hpcl.parmarketing.agency/images/hpcl/winner/winner1.webp"
-              alt="Video Thumbnail"
-            />
-          </div>
-
-          <!-- Hidden video element -->
-          <video id="event-video" controls style="display: none">
-            <source src="" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="event-video-overlay" id="event-video-overlay">
-          <button class="button" id="event-video-play-button">
-            <i class="fa-solid fa-play text-white"></i>
-          </button>
-          <button class="button d-none" id="event-video-pause-button">
-            <i class="fa-solid fa-pause text-white"></i>
-          </button>
-        </div>
       </div>
 
       <div class="special-section mt-4" id="special-div"></div>
@@ -1019,7 +1022,7 @@
           margin: 0,
           nav: true,
           items: 1,
-          autoplay: true,
+          autoplay: false,
           autoplayTimeout: 3000,
           autoplayHoverPause: true,
           dots: true,

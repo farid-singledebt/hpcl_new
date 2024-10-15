@@ -47,7 +47,8 @@ const eventVideoPlaceholder = document.getElementById(
 const EventVideoOverlay = document.getElementById("event-video-overlay");
 
 let isEventVideoPlaying = false;
-eventVideoPlayButton.addEventListener("click", function () {
+eventVideoPlayButton.addEventListener("click", playEventVideo);
+function playEventVideo() {
   const videoSource =
     "https://hpcl.parmarketing.agency/videos/hpcl/event_special/main_video.mp4";
   eventVideoElement.querySelector("source").src = videoSource;
@@ -63,9 +64,11 @@ eventVideoPlayButton.addEventListener("click", function () {
   EventVideoOverlay.classList.add("hide");
 
   eventVideoPauseButton.classList.remove("d-none");
-});
+}
+//
 
-eventVideoPauseButton.addEventListener("click", function () {
+eventVideoPauseButton.addEventListener("click", pauseEventVideo);
+function pauseEventVideo() {
   eventVideoPlaceholder.style.display = "block";
   eventVideoElement.style.display = "none";
 
@@ -75,4 +78,4 @@ eventVideoPauseButton.addEventListener("click", function () {
   EventVideoOverlay.classList.remove("hide");
 
   eventVideoPauseButton.classList.add("d-none");
-});
+}
