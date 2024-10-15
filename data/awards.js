@@ -317,7 +317,7 @@ $(document).ready(function () {
         </h2>
       </div>
       <div class="flex-grow-1 text-end">
-        <button class="button show-acc-image" style="min-width: 165px" data-img="${award.img}" data-category="${award.category}" data-bs-toggle="modal" data-bs-target="#imgModal">View Image <i class="fa fa-eye"></i></button>
+        <button class="button show-acc-image" style="min-width: 165px" data-img="${award.img}" data-category="${award.category}" data-bs-toggle="modal" data-bs-target="#imgModal">View <i class="fa fa-eye"></i></button>
       </div>
     `;
 
