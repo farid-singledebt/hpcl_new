@@ -1061,14 +1061,14 @@
         const maxPlays = 3;
 
         function playAnimation() {
-          playCount = 0; // Reset play count each time the animation enters view
-          animation.goToAndPlay(0, true); // Start the animation from frame 0
+          playCount = 0;
+          animation.goToAndPlay(0, true);
         }
 
         animation.addEventListener("complete", () => {
-          playCount++; // Increment the play count on completion
+          playCount++;
           if (playCount < maxPlays) {
-            animation.goToAndPlay(0, true); // Play again if under 3 times
+            animation.goToAndPlay(0, true);
           }
         });
 

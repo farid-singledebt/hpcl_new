@@ -1,27 +1,5 @@
 const awardsData = [
   {
-    id: 1,
-    SBU: "SOD",
-    category: "Best Indent Execution Performance 2023-24",
-    winner: "Bhatinda IRD",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/25.webp",
-  },
-  {
-    id: 2,
-    SBU: "SOD",
-    category: "Highest VTS Compliance 2023-24",
-    winner: "Rewari Terminal",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/26.webp",
-  },
-  {
-    id: 3,
-    SBU: "SOD",
-    category: "Best Performance in Safety Practices 2023-24",
-    winner: "Ajmer Terminal",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/27.webp",
-  },
-  //
-  {
     id: 4,
     SBU: "Retail",
     category: "Outstanding Customer Outreach Achievement 2023-24",
@@ -70,89 +48,6 @@ const awardsData = [
     winner: "Gorakhpur Retail RO",
     img: "https://hpcl.parmarketing.agency/images/hpcl/awards/7.webp",
   },
-  //
-  {
-    id: 11,
-    SBU: "Pipelines",
-    category: "Excellence in Pipeline Security (Least Pilferages) 2023-24",
-    winner: "RRKPL, Tikrikalan",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/30.webp",
-  },
-  {
-    id: 12,
-    SBU: "Pipelines",
-    category: "Lowest Power Consumption per MT 2023-24",
-    winner: "MDPL, Jaipur",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/31.webp",
-  },
-  //
-  {
-    id: 13,
-    SBU: "Petrochemicals",
-    category: "Rising Star",
-    winner: "Petrochemicals SBU",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/35.webp",
-  },
-  //
-  {
-    id: 14,
-    SBU: "Natural Gas",
-    category: "Excellence in Project Management 2023-24",
-    winner: "Darjeeling - Jalpaiguri- Uttar Dinajpur GA",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/36.webp",
-  },
-  {
-    id: 15,
-    SBU: "Natural Gas",
-    category: "Best Performance in Sales & Profit 2023-24",
-    winner: "Jind-Sonipat GA",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/37.webp",
-  },
-  {
-    id: 16,
-    SBU: "Natural Gas",
-    category: "Best Overall Performance 2023-24",
-    winner: "Bareilly -Pilibhit - Rampur & Sahjahanpur- Badaun GA",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/38.webp",
-  },
-  //
-  {
-    id: 17,
-    SBU: "Lubes",
-    category: "Sales Growth Leadership in OEMs 2023-24",
-    winner: "Pune Lube RO",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/15.webp",
-  },
-  {
-    id: 18,
-    SBU: "Lubes",
-    category:
-      "Best Sales Performance in Industrial Lube Distributor Channel 2023-24",
-    winner: "Pune Lube RO",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/16.webp",
-  },
-  {
-    id: 19,
-    SBU: "Lubes",
-    category: "Best Performance in Bazaar Lubes 2023-24",
-    winner: "Bengaluru Lube RO",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/17.webp",
-  },
-  {
-    id: 20,
-    SBU: "Lubes",
-    category: "Best Lube Blending Plant 2023-24",
-    winner: "Silvasa Lube Plant",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/18.webp",
-  },
-  {
-    id: 21,
-    SBU: "Lubes",
-    category: "Highest Market Share Gain 2023-24",
-    winner: "Mumbai Lube RO",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/19.webp",
-  },
-  //
   {
     id: 22,
     SBU: "LPG",
@@ -202,15 +97,42 @@ const awardsData = [
     winner: "Bangalore LPG RO",
     img: "https://hpcl.parmarketing.agency/images/hpcl/awards/14.webp",
   },
-  //
   {
-    id: 29,
-    SBU: "EP & FP",
-    category: "Excellence in Project Execution 2023-24",
-    winner: "Indore Depot Revamping Project",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/32.webp",
+    id: 17,
+    SBU: "Lubes",
+    category: "Sales Growth Leadership in OEMs 2023-24",
+    winner: "Pune Lube RO",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/15.webp",
   },
-  //
+  {
+    id: 18,
+    SBU: "Lubes",
+    category:
+      "Best Sales Performance in Industrial Lube Distributor Channel 2023-24",
+    winner: "Pune Lube RO",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/16.webp",
+  },
+  {
+    id: 19,
+    SBU: "Lubes",
+    category: "Best Performance in Bazaar Lubes 2023-24",
+    winner: "Bengaluru Lube RO",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/17.webp",
+  },
+  {
+    id: 20,
+    SBU: "Lubes",
+    category: "Best Lube Blending Plant 2023-24",
+    winner: "Silvasa Lube Plant",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/18.webp",
+  },
+  {
+    id: 21,
+    SBU: "Lubes",
+    category: "Highest Market Share Gain 2023-24",
+    winner: "Mumbai Lube RO",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/19.webp",
+  },
   {
     id: 30,
     SBU: "Direct Sales",
@@ -246,24 +168,27 @@ const awardsData = [
     winner: "Delhi I&C RO",
     img: "https://hpcl.parmarketing.agency/images/hpcl/awards/19.webp",
   },
-  //
   {
-    id: 35,
-    SBU: "CPO",
-    category: "Fastest Execution Time from PR to PO 2023-24",
-    winner: "Corporate & Services Category (CPO)",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/33.webp",
+    id: 1,
+    SBU: "SOD",
+    category: "Best Indent Execution Performance 2023-24",
+    winner: "Bhatinda IRD",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/25.webp",
   },
-  //
   {
-    id: 36,
-    SBU: "B & RE",
-    category:
-      "Excellence in Project Execution & Commencement of Solar Power Sales 2023-24",
-    winner: "Jhansi Solar Power Project",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/34.webp",
+    id: 2,
+    SBU: "SOD",
+    category: "Highest VTS Compliance 2023-24",
+    winner: "Rewari Terminal",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/26.webp",
   },
-  //
+  {
+    id: 3,
+    SBU: "SOD",
+    category: "Best Performance in Safety Practices 2023-24",
+    winner: "Ajmer Terminal",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/27.webp",
+  },
   {
     id: 37,
     SBU: "Aviation",
@@ -277,6 +202,72 @@ const awardsData = [
     category: "Highest Number of Flights Refuelled per Employee 2023-24",
     winner: "Dumdum ASF",
     img: "https://hpcl.parmarketing.agency/images/hpcl/awards/29.webp",
+  },
+  {
+    id: 11,
+    SBU: "Pipelines",
+    category: "Excellence in Pipeline Security (Least Pilferages) 2023-24",
+    winner: "RRKPL, Tikrikalan",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/30.webp",
+  },
+  {
+    id: 12,
+    SBU: "Pipelines",
+    category: "Lowest Power Consumption per MT 2023-24",
+    winner: "MDPL, Jaipur",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/31.webp",
+  },
+  {
+    id: 29,
+    SBU: "EP & FP",
+    category: "Excellence in Project Execution 2023-24",
+    winner: "Indore Depot Revamping Project",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/32.webp",
+  },
+  {
+    id: 35,
+    SBU: "CPO",
+    category: "Fastest Execution Time from PR to PO 2023-24",
+    winner: "Corporate & Services Category (CPO)",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/33.webp",
+  },
+  {
+    id: 36,
+    SBU: "B & RE",
+    category:
+      "Excellence in Project Execution & Commencement of Solar Power Sales 2023-24",
+    winner: "Jhansi Solar Power Project",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/34.webp",
+  },
+  //
+  {
+    id: 13,
+    SBU: "Petrochemicals",
+    category: "Rising Star",
+    winner: "Petrochemicals SBU",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/35.webp",
+  },
+  //
+  {
+    id: 14,
+    SBU: "Natural Gas",
+    category: "Excellence in Project Management 2023-24",
+    winner: "Darjeeling - Jalpaiguri- Uttar Dinajpur GA",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/36.webp",
+  },
+  {
+    id: 15,
+    SBU: "Natural Gas",
+    category: "Best Performance in Sales & Profit 2023-24",
+    winner: "Jind-Sonipat GA",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/37.webp",
+  },
+  {
+    id: 16,
+    SBU: "Natural Gas",
+    category: "Best Overall Performance 2023-24",
+    winner: "Bareilly -Pilibhit - Rampur & Sahjahanpur- Badaun GA",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/awards/38.webp",
   },
 ];
 
