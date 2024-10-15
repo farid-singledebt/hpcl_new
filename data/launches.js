@@ -66,6 +66,26 @@ const launchTitles = [
   },
 ];
 
+const launchVideos = [
+  {
+    video: "https://hpcl.parmarketing.agency/videos/hpcl/launches/lpg.mp4",
+  },
+  {
+    video: "https://hpcl.parmarketing.agency/videos/hpcl/launches/lubes.mp4",
+  },
+  {
+    video: "https://hpcl.parmarketing.agency/videos/hpcl/launches/lubes.mp4",
+  },
+  {
+    video:
+      "https://hpcl.parmarketing.agency/videos/hpcl/launches/mission60.mp4",
+  },
+  {
+    video:
+      "https://hpcl.parmarketing.agency/videos/hpcl/launches/digital_initiatives.mp4",
+  },
+];
+
 $(document).ready(function () {
   const mainLaunchData = [];
   function addFirstItems(mainArray, ...arrays) {
@@ -109,18 +129,32 @@ $(document).ready(function () {
               <button class="button button-flex view-launches-image" data-index="${index}" data-array="${
       index + 1
     }" data-bs-toggle="modal" data-bs-target="#carouselModal">
-                View <i class="fa fa-eye"></i>
+                View Image <i class="fa fa-eye"></i>
               </button>
               <button class="button button-flex readmore-launches" data-index="${index}" data-array="${
       index + 1
     }" data-bs-toggle="modal" data-bs-target="#readMore">
                 Read <i class="fa fa-book"></i>
               </button>
+              ${
+                item.title !== "R&D & CS&P"
+                  ? `<button
+                      class="button button-flex launch-video-button"
+                      data-index="${index}"
+                      data-array="${index + 1}"
+                      data-bs-toggle="modal"
+                      data-bs-target="#launchesVideoModal"
+                    >
+                      Play video <i class="fa fa-play"></i>
+                    </button>`
+                  : ""
+              }
             </div>
             <img src="${item.img}" alt="Image 1" />
           </div>
     `;
   }).join;
+
   launchesContainer.innerHTML = mainLaunchResult;
 
   document.querySelectorAll(".view-launches-image").forEach((item) => {
@@ -170,4 +204,26 @@ $(document).ready(function () {
         launchTitles[index].content;
     });
   });
+
+  //
+  document.querySelectorAll(".launch-video-button").forEach((item) => {
+    item.addEventListener("click", function () {
+      let index = this.getAttribute("data-index");
+      let modalVideo = document.getElementById("launches-modal-video");
+      modalVideo.querySelector("source").src = launchVideos[index].video;
+      modalVideo.load();
+      modalVideo.play();
+      //
+      document.getElementById("launches-video-title").innerHTML =
+        launchTitles[index].title;
+    });
+  });
+
+  //
+  document
+    .getElementById("launches-video-modal-close")
+    .addEventListener("click", () => {
+      let modalVideo = document.getElementById("launches-modal-video");
+      modalVideo.pause();
+    });
 });

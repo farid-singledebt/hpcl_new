@@ -9,7 +9,7 @@ $(document).ready(function () {
     "random-border-3",
   ];
 
-  for (let i = 1; i <= 20; i++) {
+  for (let i = 1; i <= 19; i++) {
     const sequentialClass = randomBorders[(i - 1) % randomBorders.length];
     mediaGalleryDay1Data.push({
       img: `https://hpcl.parmarketing.agency/images/hpcl/media_gallery/day1/${i}.webp`,
@@ -25,7 +25,7 @@ $(document).ready(function () {
     });
   }
 
-  for (let i = 1; i <= 33; i++) {
+  for (let i = 1; i <= 28; i++) {
     const sequentialClass = randomBorders[(i - 1) % randomBorders.length];
     mediaGalleryDay3Data.push({
       img: `https://hpcl.parmarketing.agency/images/hpcl/media_gallery/day3/${i}.webp`,

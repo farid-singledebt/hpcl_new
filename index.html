@@ -919,6 +919,36 @@
       </div>
     </div>
 
+    <!-- launches video modal -->
+    <div
+      class="modal fade"
+      id="launchesVideoModal"
+      tabindex="-1"
+      aria-labelledby="launchesVideoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header text-center p-2">
+            <p class="fw-bold flex-grow-1" id="launches-video-title"></p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              id="launches-video-modal-close"
+            ></button>
+          </div>
+          <div class="modal-body p-2 video-modal">
+            <video id="launches-modal-video" controls>
+              <source src="" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- pdf modal -->
     <div
       class="modal fade"
