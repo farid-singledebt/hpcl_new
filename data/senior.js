@@ -20,9 +20,9 @@ const seniorData = [
     designation: "Chief General Manager - Tax",
   },
   {
-    img: "https://hpcl.parmarketing.agency/images/hpcl/seniors/14.webp",
-    name: "KOTA SREENIVASA RAO",
-    designation: "Executive Director - Natural Gas",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/seniors/5.webp",
+    name: "K Loganathan",
+    designation: "Cheif general manager - HSE marketing",
   },
   {
     img: "https://hpcl.parmarketing.agency/images/hpcl/seniors/10.webp",
@@ -57,15 +57,16 @@ const seniorData = [
       "Executive Director - Marketing Strategy and  Business Development",
   },
   {
-    img: "https://hpcl.parmarketing.agency/images/hpcl/seniors/5.webp",
-    name: "K Loganathan",
-    designation: "Cheif general manager - HSE marketing",
-  },
-  {
     img: "https://hpcl.parmarketing.agency/images/hpcl/seniors/3.webp",
     name: "P Veerabhadra rao",
     designation: "Executive director - Visakh refinery modernisation project",
   },
+  {
+    img: "https://hpcl.parmarketing.agency/images/hpcl/seniors/14.webp",
+    name: "KOTA SREENIVASA RAO",
+    designation: "Executive Director - Natural Gas",
+  },
+  //
 ];
 
 $(document).ready(function () {

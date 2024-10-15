@@ -173,7 +173,7 @@ $(document).ready(function () {
       let carouselItems = selectedArray
         .map(
           (launchItem, i) => `
-      <div class="item">
+        <div class="item">
         <img src="${launchItem.img}" alt="Image ${i + 1}" />
       </div>
     `
@@ -189,7 +189,7 @@ $(document).ready(function () {
         loop: true,
         nav: true,
         dots: false,
-        startPosition: index,
+        startPosition: 0,
       });
     });
   });
