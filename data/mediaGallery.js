@@ -50,11 +50,15 @@ $(document).ready(function () {
       const imgElement = document.createElement("img");
       imgElement.src = item.img;
       imgElement.alt = `Gallery Image ${i + 1}`;
+      imgElement.classList.add("view-media-images");
+      imgElement.setAttribute("data-bs-toggle", "modal");
+      imgElement.setAttribute("data-bs-target", "#imgModal");
 
       masonryItem.appendChild(imgElement);
 
       mediaGalleryDay1.appendChild(masonryItem);
     }
+    viewMediaImages();
   }
 
   renderImages1(displayedImages1);
@@ -94,11 +98,15 @@ $(document).ready(function () {
       const imgElement = document.createElement("img");
       imgElement.src = item.img;
       imgElement.alt = `Gallery Image ${i + 1}`;
+      imgElement.classList.add("view-media-images");
+      imgElement.setAttribute("data-bs-toggle", "modal");
+      imgElement.setAttribute("data-bs-target", "#imgModal");
 
       masonryItem.appendChild(imgElement);
 
       mediaGalleryDay2.appendChild(masonryItem);
     }
+    viewMediaImages();
   }
 
   renderImages2(displayedImages2);
@@ -138,11 +146,15 @@ $(document).ready(function () {
       const imgElement = document.createElement("img");
       imgElement.src = item.img;
       imgElement.alt = `Gallery Image ${i + 1}`;
+      imgElement.classList.add("view-media-images");
+      imgElement.setAttribute("data-bs-toggle", "modal");
+      imgElement.setAttribute("data-bs-target", "#imgModal");
 
       masonryItem.appendChild(imgElement);
 
       mediaGalleryDay3.appendChild(masonryItem);
     }
+    viewMediaImages();
   }
 
   renderImages3(displayedImages3);
@@ -164,4 +176,15 @@ $(document).ready(function () {
         .scrollIntoView({ behavior: "smooth", block: "start" });
     }
   });
+
+  // view media images
+  function viewMediaImages() {
+    document.querySelectorAll(".view-media-images").forEach((item) => {
+      item.addEventListener("click", function () {
+        document
+          .getElementById("modal-img-div")
+          .setAttribute("src", this.getAttribute("src"));
+      });
+    });
+  }
 });
