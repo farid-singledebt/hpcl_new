@@ -738,6 +738,12 @@ ul {
   background: #00000080;
   padding: 8px;
 }
+.launches-red-buttons .button {
+  background: var(--red);
+}
+.launches-red-buttons .button:hover {
+  background: var(--blue);
+}
 .launches-overlay2 h2 {
   border-bottom: 4px solid var(--red);
 }

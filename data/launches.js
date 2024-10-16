@@ -47,7 +47,7 @@ const launchTitles = [
       "The Lubes SBU successfully launched Futur-X, its premium range of lubricants, as part of its ongoing business transformation. Recognized as one of India's largest lubricant players, we have traditionally been known for offering value-for-money products. However, with the launch of Futur-X, the aim was to elevate our brand through premiumization",
   },
   {
-    title: "R&D & CS&P",
+    title: "R&D/C&P",
     body: "Click below button to view images of launches",
     content:
       "Handing over of Products by HPGRDC to Marketing was done during Marketing Conclave , for Petrochemical SBU HP-3DPP & HP- NanoKool , 3D printable polypropylene was developed for Fused Deposition Modeling (FDM) ,Solar reflectance coatings called HP NanOkool are designed to enhance the reflectivity of surfaces. For Lubes SBU HP-PCR HDPE & HP-MWF to improve the mechanical properties at par with virgin HDPE lube bottle. HP MWF significantly prolongs the lifespan of the metalworking fluid. CS & P did the Inauguration of Automated Processes through Robotic Process Automation, Safety-GPT and HSE Dashboards on HSE portal & Metaverse for LPG Bottling Plant.",
@@ -126,7 +126,7 @@ $(document).ready(function () {
     <div class="launches-flex-box">
             <div class="launches-overlay2">
               <h2 class="text-capitalize">${item.title}</h2>
-              <div class="d-flex align-items-center justify-content-center gap-2">
+              <div class="d-flex align-items-center justify-content-center gap-2 launches-red-buttons">
                  <button class="button button-flex view-launches-image" data-index="${index}" data-array="${
       index + 1
     }" data-bs-toggle="modal" data-bs-target="#carouselModal">
