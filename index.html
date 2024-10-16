@@ -219,6 +219,37 @@
       </div>
     </div>
 
+    <!--  -->
+    <div class="container p-2 py-4">
+      <div class="title mb-4">
+        <h1>Event Walkthrough</h1>
+      </div>
+      <div class="event-video-container" style="height: 100%; max-height: 100%">
+        <div>
+          <div class="event-video-placeholder" id="event-video-placeholder">
+            <img
+              src="https://hpcl.parmarketing.agency/images/hpcl/activities/event_walkthrough_thumbnail.webp"
+              alt="Video Thumbnail"
+            />
+          </div>
+
+          <video id="event-video" controls style="display: none">
+            <source src="" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="event-video-overlay" id="event-video-overlay">
+          <button class="button" id="event-video-play-button">
+            <i class="fa-solid fa-play text-white"></i>
+          </button>
+          <button class="button d-none" id="event-video-pause-button">
+            <i class="fa-solid fa-pause text-white"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
     <!-- agenda -->
     <div class="container-fluid p-0 lightgrey-bg section" id="agenda">
       <div class="container p-2 py-5">
@@ -501,38 +532,6 @@
     <div class="containainer-fluid p-0 section" id="activities">
       <div class="title pt-5 my-5">
         <h1>Activities</h1>
-      </div>
-
-      <div class="container p-2 mb-4">
-        <div class="walkthrough-title">
-          <h2>Event Walkthrough</h2>
-        </div>
-        <div
-          class="event-video-container"
-          style="height: 100%; max-height: 100%"
-        >
-          <div>
-            <div class="event-video-placeholder" id="event-video-placeholder">
-              <img
-                src="https://hpcl.parmarketing.agency/images/hpcl/activities/event_walkthrough_thumbnail.webp"
-                alt="Video Thumbnail"
-              />
-            </div>
-
-            <video id="event-video" controls style="display: none">
-              <source src="" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="event-video-overlay" id="event-video-overlay">
-            <button class="button" id="event-video-play-button">
-              <i class="fa-solid fa-play text-white"></i>
-            </button>
-            <button class="button d-none" id="event-video-pause-button">
-              <i class="fa-solid fa-pause text-white"></i>
-            </button>
-          </div>
-        </div>
       </div>
 
       <div class="banner-container w-100 p-2">

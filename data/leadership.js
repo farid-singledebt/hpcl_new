@@ -56,7 +56,7 @@ $(document).ready(function () {
             <img src="${item.img}" alt="" />
           </div>
           <div class="leader-details">
-          <h2 class="fw-bold">
+          <h2 class="fw-bold fst-italic">
             "${item.body}"
             </h2>
             <p class="fw-bold text-capitalize">${item.name}</p>

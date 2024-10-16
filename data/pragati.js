@@ -181,25 +181,26 @@ $(document).ready(function () {
         .join("");
 
       document.getElementById("display-modal").innerHTML = carouselItems;
+      document.getElementById("display-image-title").innerHTML =
+        pragatiGalleryData[index].title;
 
       $owl.owlCarousel({
-        items: 3,
+        items: 4,
         loop: true,
         margin: 20,
         center: true,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 3000,
+        nav: true,
+        dots: true,
+        autoplay: false,
         responsive: {
           0: {
-            items: 5,
+            items: 4,
           },
           600: {
-            items: 5,
+            items: 4,
           },
           1000: {
-            items: 5,
+            items: 4,
           },
         },
         onInitialized: putFirstCenterImage,
