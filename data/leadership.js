@@ -35,7 +35,7 @@ const leadershipData = [
     video: "https://hpcl.parmarketing.agency/videos/hpcl/leadership/DHR.mp4",
   },
   {
-    name : "Ashwini kumar tiwari",
+    name: "Shri A.K. Tiwari",
     img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/CVO.webp",
     title: "Chief Vigilance Officer",
     body: "Our objective is to eliminate complaints all together.",
@@ -56,11 +56,11 @@ $(document).ready(function () {
             <img src="${item.img}" alt="" />
           </div>
           <div class="leader-details">
-          <p class="fw-bold">
+          <h2 class="fw-bold">
             "${item.body}"
-            </p>
-            <h1 class="fw-bold text-capitalize">${item.name}</h1>
-            <h1 class="text-capitalize">${item.title}</h1>
+            </h2>
+            <p class="fw-bold text-capitalize">${item.name}</p>
+            <p class="fw-bold text-capitalize">${item.title}</p>
             
             
             <button class="button leadership-video-modal-button mt-2" data-index="${index}" data-bs-toggle="modal" data-bs-target="#leadershipVideoModal">Click here</button>

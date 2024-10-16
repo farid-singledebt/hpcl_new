@@ -328,7 +328,8 @@ thead {
   gap: 8px;
 }
 .media-button-flex button {
-  width: 95px;
+  width: 140px;
+  font-size: 30px;
 }
 .awards-button-flex {
   display: flex;
@@ -894,6 +895,9 @@ ul {
   color: #fff;
   text-align: center;
 }
+.event-overlay .button {
+  font-size: 20px;
+}
 .about-overlay p {
   font-size: 1.3rem !important;
   text-align: justify;
@@ -1098,8 +1102,9 @@ ul {
   min-width: 300px;
   max-width: 300px;
 }
-.leader-details h1 {
+.leader-details h2 {
   color: var(--blue);
+  margin-bottom: 16px;
 }
 .leader-details p {
   font-size: 1.25rem;
@@ -1200,4 +1205,9 @@ ul {
 }
 .pragati-display-images {
   cursor: pointer;
+}
+.walkthrough-title {
+  text-align: center;
+  padding-bottom: 16px;
+  color: var(--blue);
 }
