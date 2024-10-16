@@ -2,12 +2,12 @@ const seniorData = [
   {
     img: "https://hpcl.parmarketing.agency/images/hpcl/seniors/8.webp",
     name: "PRANAY KUMAR",
-    designation: "Chief Executive Officer - HBL",
+    designation: "chief Executive Officer - HBL",
   },
   {
     img: "https://hpcl.parmarketing.agency/images/hpcl/seniors/4.webp",
     name: "SANJAY DASGUPTA",
-    designation: "Chief General Manager - ERP",
+    designation: "chief General Manager - ERP",
   },
   {
     img: "https://hpcl.parmarketing.agency/images/hpcl/seniors/2.webp",
@@ -17,12 +17,12 @@ const seniorData = [
   {
     img: "https://hpcl.parmarketing.agency/images/hpcl/seniors/1.webp",
     name: "BALAGURUNATHAN K",
-    designation: "Chief General Manager - Tax",
+    designation: "chief General Manager - Tax",
   },
   {
     img: "https://hpcl.parmarketing.agency/images/hpcl/seniors/5.webp",
     name: "K Loganathan",
-    designation: "Cheif general manager - HSE marketing",
+    designation: "chief general manager - HSE marketing",
   },
   {
     img: "https://hpcl.parmarketing.agency/images/hpcl/seniors/10.webp",
@@ -43,12 +43,12 @@ const seniorData = [
   {
     img: "https://hpcl.parmarketing.agency/images/hpcl/seniors/13.webp",
     name: "SHUVENDU GUPTA",
-    designation: "Chief Executive Officer",
+    designation: "chief Executive Officer",
   },
   {
     img: "https://hpcl.parmarketing.agency/images/hpcl/seniors/7.webp",
     name: "SANJAY MALHOTRA",
-    designation: "Chief Executive Officer - HINCOL",
+    designation: "chief Executive Officer - HINCOL",
   },
   {
     img: "https://hpcl.parmarketing.agency/images/hpcl/seniors/9.webp",

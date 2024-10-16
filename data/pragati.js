@@ -90,7 +90,7 @@ function renderPragatiGallery() {
   const pragatiGalleryDiv = document.getElementById("pragati-gallery-div");
   let pragatiGalleryResult = "";
 
-  pragatiGalleryData.map((item, index) => {
+  pragatiGalleryData.reverse().map((item, index) => {
     pragatiGalleryResult += `
         <div class="pragati-gallery mb-5 py-4">
           <div class="pragati-gallery-left">

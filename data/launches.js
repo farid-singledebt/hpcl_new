@@ -126,15 +126,16 @@ $(document).ready(function () {
     <div class="launches-flex-box">
             <div class="launches-overlay2">
               <h2 class="text-capitalize">${item.title}</h2>
-              <button class="button button-flex view-launches-image" data-index="${index}" data-array="${
+              <div class="d-flex align-items-center justify-content-center gap-2">
+                 <button class="button button-flex view-launches-image" data-index="${index}" data-array="${
       index + 1
     }" data-bs-toggle="modal" data-bs-target="#carouselModal">
-                View Image <i class="fa fa-eye"></i>
+                 <i class="fa fa-eye"></i>
               </button>
               <button class="button button-flex readmore-launches" data-index="${index}" data-array="${
       index + 1
     }" data-bs-toggle="modal" data-bs-target="#readMore">
-                Read <i class="fa fa-book"></i>
+                <i class="fa fa-book"></i>
               </button>
               ${
                 item.title !== "R&D & CS&P"
@@ -145,10 +146,11 @@ $(document).ready(function () {
                       data-bs-toggle="modal"
                       data-bs-target="#launchesVideoModal"
                     >
-                      Play video <i class="fa fa-play"></i>
+                      <i class="fa fa-play"></i>
                     </button>`
                   : ""
               }
+              </div>
             </div>
             <img src="${item.img}" alt="Image 1" />
           </div>
