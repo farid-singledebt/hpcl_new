@@ -1233,8 +1233,16 @@ ul {
   text-align: center;
   display: inline-block;
 }
-.activities-item .activity-title h1 {
+
+.activities-item img {
+  object-fit: cover !important;
+  min-height: 768px !important;
+}
+.activities-item .activity-title p {
   background: -webkit-linear-gradient(130deg, var(--blue), var(--red));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
 }

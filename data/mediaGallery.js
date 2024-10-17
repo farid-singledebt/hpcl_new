@@ -17,7 +17,7 @@ $(document).ready(function () {
     });
   }
 
-  for (let i = 1; i <= 60; i++) {
+  for (let i = 1; i <= 59; i++) {
     const sequentialClass = randomBorders[(i - 1) % randomBorders.length];
     mediaGalleryDay2Data.push({
       img: `https://hpcl.parmarketing.agency/images/hpcl/media_gallery/day2/${i}.webp`,
