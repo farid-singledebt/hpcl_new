@@ -1236,7 +1236,8 @@ ul {
 
 .activities-item img {
   object-fit: cover !important;
-  min-height: 768px !important;
+  max-height: 768px !important;
+  object-position: center;
 }
 .activities-item .activity-title p {
   background: -webkit-linear-gradient(130deg, var(--blue), var(--red));

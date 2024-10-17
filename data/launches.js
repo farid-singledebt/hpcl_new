@@ -27,7 +27,7 @@ for (let i = 1; i <= 8; i++) {
 }
 //
 const launch5Data = [];
-for (let i = 1; i <= 7; i++) {
+for (let i = 1; i <= 4; i++) {
   launch5Data.push({
     img: `https://hpcl.parmarketing.agency/images/hpcl/launches/launch5/${i}.webp`,
   });
@@ -138,7 +138,7 @@ $(document).ready(function () {
                 <i class="fa fa-book"></i>
               </button>
               ${
-                item.title !== "R&D & CS&P"
+                item.title !== "R&D/C&P"
                   ? `<button
                       class="button button-flex launch-video-button"
                       data-index="${index}"
