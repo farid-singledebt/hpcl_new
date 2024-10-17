@@ -1,62 +1,37 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const navbarLinks = document.querySelectorAll(".nav-links li a");
+// Select all the sections and navbar links
+const sections = document.querySelectorAll(".section");
+const navLinks = document.querySelectorAll(".nav-links a");
 
-  // Function to remove 'active' class from all links
-  function removeActiveClasses() {
-    navbarLinks.forEach((link) => link.classList.remove("active"));
+// Function to remove 'active' class from all links
+function removeActiveClasses() {
+  navLinks.forEach((link) => link.classList.remove("active"));
+}
+
+// Function to add 'active' class to the current section link
+function addActiveClass(id) {
+  const link = document.querySelector(`.nav-links a[href="#${id}"]`);
+  if (link) {
+    link.classList.add("active");
   }
+}
 
-  // Callback for when a section enters the viewport
-  function observerCallback(entries, observer) {
+// Set up the IntersectionObserver
+const observer = new IntersectionObserver(
+  (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        const sectionId = entry.target.id;
+        // Remove 'active' from all links and add it to the current section's link
         removeActiveClasses();
-
-        // Add 'active' class to the corresponding nav link
-        navbarLinks.forEach((link) => {
-          if (link.getAttribute("href").substring(1) === sectionId) {
-            link.classList.add("active");
-          }
-        });
+        addActiveClass(entry.target.id);
       }
     });
+  },
+  {
+    threshold: 0.3, // Adjust this value to determine how much of the section needs to be in view to trigger
   }
+);
 
-  // IntersectionObserver options
-  const observerOptions = {
-    root: null, // observes in the viewport
-    threshold: 0.6, // triggers when 60% of the section is visible
-  };
-
-  // Function to initialize observer for all sections
-  function observeSections() {
-    const sections = document.querySelectorAll(".section"); // Ensure sections are dynamically fetched
-    const observer = new IntersectionObserver(
-      observerCallback,
-      observerOptions
-    );
-
-    sections.forEach((section) => {
-      observer.observe(section); // Observe both static and dynamically loaded sections
-    });
-  }
-
-  // Initialize observer for static sections
-  observeSections();
-
-  // Example: Dynamically render content (simulated)
-  function renderDynamicContent() {
-    const dynamicSection = document.querySelector("#dynamic-section");
-    if (dynamicSection) {
-      // Inject dynamic content
-      dynamicSection.innerHTML = "<p>Dynamic content loaded...</p>";
-
-      // Reinitialize observer after dynamic content is added
-      observeSections();
-    }
-  }
-
-  // Simulate dynamic content loading after 2 seconds
-  setTimeout(renderDynamicContent, 5000);
+// Observe each section
+sections.forEach((section) => {
+  observer.observe(section);
 });
