@@ -50,7 +50,7 @@ const pragatiGalleryData = [
   },
 ];
 
-for (let i = 1; i <= 2; i++) {
+for (let i = 1; i <= 6; i++) {
   pragatiGalleryData[0].images.push({
     img: `https://hpcl.parmarketing.agency/images/hpcl/pragati/lpg/${i}.webp`,
   });
