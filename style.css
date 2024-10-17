@@ -1246,3 +1246,7 @@ ul {
   font-size: 20px;
   font-weight: bold;
 }
+.launches-flex-container .launches-flex-box:nth-child(1) img,
+.launches-flex-container .launches-flex-box:nth-child(5) img {
+  object-position: right;
+}
