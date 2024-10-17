@@ -219,7 +219,7 @@ const awardsData = [
   },
   {
     id: 29,
-    SBU: "EP & FP",
+    SBU: "Engineering Projects & Facilities Planning",
     category: "Excellence in Project Execution 2023-24",
     winner: "Indore Depot Revamping Project",
     img: "https://hpcl.parmarketing.agency/images/hpcl/awards/32.webp",
@@ -233,7 +233,7 @@ const awardsData = [
   },
   {
     id: 36,
-    SBU: "B & RE",
+    SBU: "Bio-Fuel & Renewables",
     category:
       "Excellence in Project Execution & Commencement of Solar Power Sales 2023-24",
     winner: "Jhansi Solar Power Project",

@@ -1217,3 +1217,24 @@ ul {
 #display-modal button.active span {
   background: var(--red);
 }
+.activities-item {
+  position: relative;
+}
+.activities-item .activity-title {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  padding: 8px 16px;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  display: inline-block;
+}
+.activities-item .activity-title h1 {
+  background: -webkit-linear-gradient(130deg, var(--blue), var(--red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
