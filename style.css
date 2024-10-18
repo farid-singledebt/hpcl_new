@@ -895,6 +895,21 @@ ul {
   color: #fff;
   text-align: center;
 }
+.event-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.event-overlay .link {
+  flex: 1;
+}
+.event-overlay .qr-code {
+  max-width: 200px;
+}
+.event-overlay .qr-code img {
+  width: 100px;
+}
 .event-overlay .button {
   font-size: 20px;
 }
@@ -1250,4 +1265,10 @@ ul {
 .launches-flex-container .launches-flex-box:nth-child(1) img,
 .launches-flex-container .launches-flex-box:nth-child(5) img {
   object-position: right;
+}
+#media-gallery-day3 .masonry-item:nth-child(20) img {
+  object-position: left;
+}
+#media-gallery-day2 .masonry-item:nth-child(15) img {
+  object-position: top;
 }

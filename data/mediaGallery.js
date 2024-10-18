@@ -185,6 +185,7 @@ $(document).ready(function () {
           .getElementById("modal-img-div")
           .setAttribute("src", this.getAttribute("src"));
       });
+      document.getElementById("image-title").innerHTML = "";
     });
   }
 });

@@ -164,6 +164,13 @@
   .senior-details {
     max-height: 100px;
   }
+  .event-overlay {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .event-overlay .qr-code {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 525px) {
   .agenda-button-flex,

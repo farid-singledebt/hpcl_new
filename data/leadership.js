@@ -31,7 +31,7 @@ const leadershipData = [
     name: "Shri k s shetty",
     img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/HR.webp",
     title: "Director Human Resources",
-    body: "It is important we network with our channel partners and build on legacy of relaionship.",
+    body: "It is important we network with our channel partners and build on legacy of relationship.",
     video: "https://hpcl.parmarketing.agency/videos/hpcl/leadership/DHR.mp4",
   },
   {

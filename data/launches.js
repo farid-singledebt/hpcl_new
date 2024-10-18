@@ -74,7 +74,7 @@ const launchVideos = [
     video: "https://hpcl.parmarketing.agency/videos/hpcl/launches/lubes.mp4",
   },
   {
-    video: "https://hpcl.parmarketing.agency/videos/hpcl/launches/lubes.mp4",
+    video: "https://hpcl.parmarketing.agency/videos/hpcl/launches/r&d.mp4",
   },
   {
     video:
@@ -137,9 +137,7 @@ $(document).ready(function () {
     }" data-bs-toggle="modal" data-bs-target="#readMore">
                 <i class="fa fa-book"></i>
               </button>
-              ${
-                item.title !== "R&D/C&P"
-                  ? `<button
+              <button
                       class="button button-flex launch-video-button"
                       data-index="${index}"
                       data-array="${index + 1}"
@@ -147,9 +145,7 @@ $(document).ready(function () {
                       data-bs-target="#launchesVideoModal"
                     >
                       <i class="fa fa-play"></i>
-                    </button>`
-                  : ""
-              }
+                    </button>
               </div>
             </div>
             <img src="${item.img}" alt="Image 1" />
