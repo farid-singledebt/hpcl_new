@@ -74,7 +74,7 @@ const launchVideos = [
     video: "https://hpcl.parmarketing.agency/videos/hpcl/launches/lubes.mp4",
   },
   {
-    video: "https://hpcl.parmarketing.agency/videos/hpcl/launches/r&d.mp4",
+    video: "https://hpcl.parmarketing.agency/videos/hpcl/launches/Parikalp.mp4",
   },
   {
     video:
