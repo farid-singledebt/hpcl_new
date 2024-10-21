@@ -1262,8 +1262,7 @@ ul {
   font-size: 20px;
   font-weight: bold;
 }
-.launches-flex-container .launches-flex-box:nth-child(1) img,
-.launches-flex-container .launches-flex-box:nth-child(5) img {
+.launches-flex-container .launches-flex-box:nth-child(1) img {
   object-position: right;
 }
 #media-gallery-day3 .masonry-item:nth-child(20) img {
@@ -1271,4 +1270,22 @@ ul {
 }
 #media-gallery-day2 .masonry-item:nth-child(15) img {
   object-position: top;
+}
+.launches-flex-container .launches-flex-box:nth-child(5) img {
+  transform: scale(1.4);
+  object-position: 125%;
+}
+.launches-flex-container .launches-flex-box:nth-child(2) .launches-overlay2,
+.launches-flex-container .launches-flex-box:nth-child(4) .launches-overlay2,
+.launches-flex-container .launches-flex-box:nth-child(5) .launches-overlay2 {
+  z-index: 1;
+}
+
+.launches-flex-container .launches-flex-box:nth-child(2) img {
+  transform: scale(1.7);
+  object-position: 95%;
+}
+.launches-flex-container .launches-flex-box:nth-child(4) img {
+  transform: scale(1.5);
+  object-position: 30%;
 }
