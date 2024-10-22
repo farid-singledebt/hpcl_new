@@ -63,7 +63,7 @@ $(document).ready(function () {
             <p class="fw-bold text-capitalize">${item.title}</p>
             
             
-            <button class="button leadership-video-modal-button mt-2" data-index="${index}" data-bs-toggle="modal" data-bs-target="#leadershipVideoModal">Click here</button>
+            <button class="button leadership-video-modal-button mt-2" data-index="${index}" data-bs-toggle="modal" data-bs-target="#leadershipVideoModal">View video</button>
           </div>
     `;
     leadershipSection.appendChild(box);

@@ -185,7 +185,7 @@ $(document).ready(function () {
         pragatiGalleryData[index].title;
 
       $owl.owlCarousel({
-        items: 4,
+        items: 3,
         loop: true,
         margin: 20,
         center: true,
@@ -194,13 +194,13 @@ $(document).ready(function () {
         autoplay: false,
         responsive: {
           0: {
-            items: 4,
+            items: 3,
           },
           600: {
-            items: 4,
+            items: 3,
           },
           1000: {
-            items: 4,
+            items: 3,
           },
         },
         onInitialized: putFirstCenterImage,

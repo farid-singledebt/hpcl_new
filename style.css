@@ -338,7 +338,8 @@ thead {
   gap: 8px;
 }
 .awards-button-flex button {
-  width: 225px;
+  width: 320px;
+  font-size: 25px;
 }
 .seniors-flex {
   display: flex;
@@ -548,6 +549,9 @@ footer {
 }
 .pragati-gallery .pragati-gallery-left img {
   height: 350px;
+  object-position: center;
+}
+#pragati-gallery-div .pragati-gallery:nth-child(4) .pragati-gallery-left img {
   object-position: top;
 }
 .pragati-gallery .pragati-gallery-right {
@@ -1199,7 +1203,7 @@ ul {
   border: 5px solid var(--red);
 }
 #center-image {
-  max-height: 400px;
+  max-height: 500px;
 }
 
 .modal-gradient-bg {
