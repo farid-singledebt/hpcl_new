@@ -7,13 +7,6 @@ const leadershipData = [
     video: "https://hpcl.parmarketing.agency/videos/hpcl/leadership/C&MD.mp4",
   },
   {
-    name: "Shri amit garg",
-    img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/DM.webp",
-    title: "Director Marketing",
-    body: "We are primarily a marketing company and as a marketing company customer comes first.",
-    video: "https://hpcl.parmarketing.agency/videos/hpcl/leadership/DM.mp4",
-  },
-  {
     name: "Shri rajneesh narang",
     img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/DF.webp",
     title: "Director Finance",
@@ -26,6 +19,13 @@ const leadershipData = [
     title: "Director Refineries",
     body: "Arise, Awake & stop not, till the goal is reached.",
     video: "https://hpcl.parmarketing.agency/videos/hpcl/leadership/DR.mp4",
+  },
+  {
+    name: "Shri amit garg",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/DM.webp",
+    title: "Director Marketing",
+    body: "We are primarily a marketing company and as a marketing company customer comes first.",
+    video: "https://hpcl.parmarketing.agency/videos/hpcl/leadership/DM.mp4",
   },
   {
     name: "Shri k s shetty",
