@@ -60,7 +60,7 @@ $(document).ready(function () {
   document.querySelectorAll(".presentation-img").forEach((item) => {
     item.addEventListener("click", function () {
       const pdfUrl = this.getAttribute("data-pdf");
-      document.getElementById("pdfIframe").src = pdfUrl;
+      document.getElementById("pdfIframe").src = pdfUrl + "#toolbar=0";
     });
   });
 
