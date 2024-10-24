@@ -93,4 +93,36 @@ $(document).ready(function () {
       let modalVideo = document.getElementById("leadership-modal-video");
       modalVideo.pause();
     });
+
+  //
+  const sttPlayButton = document.getElementById("stt-play-button");
+  const sttPauseButton = document.getElementById("stt-pause-button");
+  const sttVideoElement = document.getElementById("stt-video");
+  const sttVideoPlaceholder = document.getElementById("stt-placeholder");
+  const sttOverlay = document.getElementById("stt-overlay");
+  let isSTTPlaying = false;
+  let isSTTVideoLoaded = false;
+  sttPlayButton.addEventListener("click", function () {
+    if (!isSTTVideoLoaded) {
+      const videoSource =
+        "https://hpcl.parmarketing.agency/videos/hpcl/leadership/stt_video.mp4";
+      sttVideoElement.querySelector("source").src = videoSource;
+      sttVideoElement.load();
+      isSTTVideoLoaded = true;
+    }
+    sttVideoPlaceholder.style.display = "none";
+    sttVideoElement.style.display = "block";
+    isSTTPlaying = true;
+    sttVideoElement.play();
+    sttPlayButton.style.display = "none";
+    sttOverlay.classList.add("hide");
+    sttPauseButton.classList.remove("d-none");
+  });
+  sttPauseButton.addEventListener("click", function () {
+    isSTTPlaying = false;
+    sttVideoElement.pause();
+    sttPlayButton.style.display = "block";
+    sttOverlay.classList.remove("hide");
+    sttPauseButton.classList.add("d-none");
+  });
 });
