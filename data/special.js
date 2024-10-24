@@ -6,19 +6,19 @@ const specialData = [
     video:
       "https://hpcl.parmarketing.agency/videos/hpcl/event_special/nsnj.mp4",
   },
-  // {
-  //   img: "https://hpcl.parmarketing.agency/images/hpcl/event_special/thumbnail/3.webp",
-  //   title: "Mission 60",
-  //   body: "The Mission 60 AV represents HPCL's ambitious initiative aimed at achieving excellence and growth through strategic interventions and innovations. This AV outlines the company's roadmap towards reaching significant milestones across various business verticals, so as to collectively exceed volume of 60MMT by FY 26' completion.",
-  //   video:
-  //     "https://hpcl.parmarketing.agency/videos/hpcl/event_special/mission60.mp4",
-  // },
   {
     img: "https://hpcl.parmarketing.agency/images/hpcl/event_special/thumbnail/heroes_thumbnail.webp",
     title: "Heroes of Marketing",
     body: "Heroes are not just in stories — they exist right here in our workplace! The 'Heroes of Marketing' proudly showcase the extraordinary achievements of our remarkable Marketing Team during the fiscal year 2023-24. This year stands as a testament to our collective effort, filled with record-breaking milestones and numerous “Highest Evers” by each Marketing SBU that have set new benchmarks for success. This victory belongs to every team member who demonstrated unwavering dedication, creativity, hard work, and commitment to our shared vision. Every individual played a pivotal role in transforming ambitious goals into tangible achievements. Behind every milestone is a hero — someone who goes above and beyond to turn HPCL's vision into reality. Let this celebration serve as a powerful reminder of what we can accomplish when we unite with a common purpose. As we reflect on these accomplishments, may we find inspiration to push boundaries, break barriers, and continue delivering excellence in every aspect of our work, all while upholding the spirit of HP FIRST!",
     video:
       "https://hpcl.parmarketing.agency/videos/hpcl/event_special/heroes_of_hpcl.mp4",
+  },
+  {
+    img: "https://hpcl.parmarketing.agency/images/hpcl/event_special/thumbnail/nsnj_thumbnail.webp",
+    title: "Success Story",
+    body: "In every journey, there are moments that define success, that remind us why we push our limits, and why we continue to innovate. We have achieved excellent performance during the year 2023-24 and such superlative performance is possible only when all the SBUs and every single member of the Teams put their best foot forward and contribute more than their best in unison. It is worth watching glimpses of these great successes. These success stories that exemplify dedication, teamwork, and vision have common thread of resilience, perseverance, determination, innovation and team work. The stories you are about to witness are a shining example of how these values are brought to life. Let us sit back, enjoy and celebrate these successes",
+    video:
+      "https://hpcl.parmarketing.agency/videos/hpcl/event_special/hpcl_success_story.mp4",
   },
   {
     img: "https://hpcl.parmarketing.agency/images/hpcl/event_special/thumbnail/sandart_thumbnail.webp",
