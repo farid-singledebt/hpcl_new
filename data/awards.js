@@ -272,7 +272,8 @@ const awardsData = [
 ];
 
 $(document).ready(function () {
-  const categorizedAwards = awardsData.reduce((acc, current) => {
+  const sortedArray = awardsData.sort((a, b) => a.SBU.localeCompare(b.SBU));
+  const categorizedAwards = sortedArray.reduce((acc, current) => {
     if (!acc[current.SBU]) {
       acc[current.SBU] = [];
     }
