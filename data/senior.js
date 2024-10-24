@@ -73,6 +73,7 @@ $(document).ready(function () {
   const seniorDiv = document.getElementById("senior-div");
   let seniorResult = "";
   seniorData
+    .reverse()
     .map((item, index) => {
       seniorResult += `
     <div class="seniors-card" data-index="${index}" data-bs-toggle="modal" data-bs-target="#imgModal">
