@@ -923,21 +923,25 @@ ul {
   font-weight: bold;
 }
 .stall,
-.event-video-container {
+.event-video-container,
+.stt-video-container {
   width: 100%;
   position: relative;
 }
 .stall img,
 .stall video,
 .event-video-container img,
-.event-video-container video {
+.event-video-container video,
+.stt-video-container img,
+.stt-video-container video {
   width: 100%;
   height: 100%;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
 .stall-overlay,
-.event-video-overlay {
+.event-video-overlay,
+.stt-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -948,11 +952,13 @@ ul {
   place-items: center;
 }
 .stall-overlay.hide,
-.event-video-overlay.hide {
+.event-video-overlay.hide,
+.stt-overlay-hide {
   background: none;
 }
 .stall-overlay .button,
-.event-video-overlay .button {
+.event-video-overlay .button,
+.stt-overlay .button {
   width: 75px;
   max-width: 75px;
   height: 75px;
@@ -963,11 +969,13 @@ ul {
   position: relative;
 }
 .stall-overlay .button i,
-.event-video-overlay .button i {
+.event-video-overlay .button i,
+.stt-overlay .button i {
   font-size: 1.5rem !important;
 }
 .stall-overlay .button::before,
-.event-video-overlay .button::before {
+.event-video-overlay .button::before,
+.stt-overlay .button::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -982,11 +990,13 @@ ul {
   animation: pulse 2s infinite;
 }
 .stall-overlay #stall-pause-button,
-.event-video-overlay #event-video-pause-button {
+.event-video-overlay #event-video-pause-button,
+.stt-overlay #stt-pause-button {
   opacity: 0;
 }
 .stall-overlay:hover #stall-pause-button,
-.event-video-overlay:hover #event-video-pause-button {
+.event-video-overlay:hover #event-video-pause-button,
+.stt-overlay:hover #stt-pause-button {
   opacity: 1;
 }
 @keyframes pulse {

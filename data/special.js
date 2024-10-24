@@ -14,8 +14,8 @@ const specialData = [
       "https://hpcl.parmarketing.agency/videos/hpcl/event_special/heroes_of_hpcl.mp4",
   },
   {
-    img: "https://hpcl.parmarketing.agency/images/hpcl/event_special/thumbnail/nsnj_thumbnail.webp",
-    title: "Success Story",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/event_special/thumbnail/success_stories.webp",
+    title: "Success Stories",
     body: "In every journey, there are moments that define success, that remind us why we push our limits, and why we continue to innovate. We have achieved excellent performance during the year 2023-24 and such superlative performance is possible only when all the SBUs and every single member of the Teams put their best foot forward and contribute more than their best in unison. It is worth watching glimpses of these great successes. These success stories that exemplify dedication, teamwork, and vision have common thread of resilience, perseverance, determination, innovation and team work. The stories you are about to witness are a shining example of how these values are brought to life. Let us sit back, enjoy and celebrate these successes",
     video:
       "https://hpcl.parmarketing.agency/videos/hpcl/event_special/hpcl_success_story.mp4",
