@@ -19,7 +19,6 @@ function addActiveClass(id) {
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      console.log(entry);
       if (entry.isIntersecting) {
         // Remove 'active' from all links and add it to the current section's link
         removeActiveClasses();
