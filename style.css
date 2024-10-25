@@ -647,8 +647,6 @@ footer {
 .banner-container {
   position: relative;
   background-color: #fff;
-  max-width: 1320px;
-  margin: 0 auto;
 }
 .banner-content {
   position: fixed;

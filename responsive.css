@@ -79,6 +79,13 @@
   .header2 {
     display: none;
   }
+  .home-dm {
+    flex-direction: column-reverse;
+  }
+  .home-dm > div:nth-child(1) {
+    padding: 24px 16px;
+    height: auto;
+  }
 }
 @media screen and (max-width: 768px) {
   .prizes-grid .prizes-card {
@@ -204,6 +211,10 @@
   .right-logo {
     width: 100%;
     margin: 0 auto;
+  }
+  .home-dm > div:nth-child(2) img {
+    max-width: 100%;
+    min-height: 400px;
   }
 }
 @media screen and (max-width: 350px) {
