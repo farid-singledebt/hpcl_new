@@ -1312,15 +1312,21 @@ ul {
 }
 .home-dm > div:nth-child(1) {
   flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  text-align: justify;
   background: linear-gradient(45deg, var(--blue), var(--red));
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   color: #fff;
+  overflow-y: auto;
+  padding: 16px;
+}
+.home-dm > div:nth-child(1)::-webkit-scrollbar {
+  width: 10px;
+}
+.home-dm > div:nth-child(1)::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: #fff;
+  border-radius: 10px;
 }
 .home-dm > div:nth-child(1) p {
   font-size: 20px;
