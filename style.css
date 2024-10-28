@@ -1316,7 +1316,7 @@ ul {
   color: #fff;
   overflow-y: auto;
   padding: 16px;
-  height: 350px;
+  height: 400px;
 }
 .home-dm > div:nth-child(1)::-webkit-scrollbar {
   width: 10px;
@@ -1326,14 +1326,11 @@ ul {
   background: #fff;
   border-radius: 10px;
 }
-.home-dm > div:nth-child(1) p {
-  font-size: 18px;
-}
 .home-dm > div:nth-child(2) img {
   aspect-ratio: 1;
   border-radius: var(--radius);
   object-position: top;
-  height: 350px;
+  height: 400px;
 }
 .divider-line {
   width: 100%;
