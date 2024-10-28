@@ -79,13 +79,6 @@
   .header2 {
     display: none;
   }
-  .home-dm {
-    flex-direction: column-reverse;
-  }
-  .home-dm > div:nth-child(1) {
-    padding: 24px 16px;
-    height: auto;
-  }
 }
 @media screen and (max-width: 768px) {
   .prizes-grid .prizes-card {
@@ -159,6 +152,15 @@
   .mobile-banner {
     display: block;
   }
+  .home-dm {
+    grid-template-columns: 1fr;
+  }
+  .home-dm > div:nth-child(1) {
+    order: 2;
+  }
+  .home-dm > div:nth-child(2) {
+    order: 1;
+  }
 }
 @media screen and (max-width: 576px) {
   .launches-button-flex {
@@ -211,10 +213,6 @@
   .right-logo {
     width: 100%;
     margin: 0 auto;
-  }
-  .home-dm > div:nth-child(2) img {
-    max-width: 100%;
-    min-height: 400px;
   }
 }
 @media screen and (max-width: 350px) {

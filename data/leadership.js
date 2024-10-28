@@ -32,7 +32,8 @@ const leadershipData = [
     img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/DM.webp",
     title: "Director Marketing",
     body: "We are primarily a marketing company and as a marketing company customer comes first.",
-    video: "https://hpcl.parmarketing.agency/videos/hpcl/leadership/DM.mp4",
+    video:
+      "https://hpcl.parmarketing.agency/videos/hpcl/leadership/stt_video.mp4",
   },
   {
     name: "Shri pushp kumar joshi",
@@ -105,7 +106,7 @@ $(document).ready(function () {
   sttPlayButton.addEventListener("click", function () {
     if (!isSTTVideoLoaded) {
       const videoSource =
-        "https://hpcl.parmarketing.agency/videos/hpcl/leadership/stt_video.mp4";
+        "https://hpcl.parmarketing.agency/videos/hpcl/leadership/DM.mp4";
       sttVideoElement.querySelector("source").src = videoSource;
       sttVideoElement.load();
       isSTTVideoLoaded = true;

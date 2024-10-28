@@ -1302,13 +1302,13 @@ ul {
   object-position: 30%;
 }
 .home-dm {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: start;
   justify-content: space-between;
   gap: 16px;
 }
 .home-dm > div:nth-child(1) {
-  flex: 1;
   text-align: justify;
   background: linear-gradient(45deg, var(--blue), var(--red));
   border-radius: var(--radius);
@@ -1316,6 +1316,7 @@ ul {
   color: #fff;
   overflow-y: auto;
   padding: 16px;
+  height: 350px;
 }
 .home-dm > div:nth-child(1)::-webkit-scrollbar {
   width: 10px;
@@ -1329,11 +1330,10 @@ ul {
   font-size: 18px;
 }
 .home-dm > div:nth-child(2) img {
-  max-width: 400px;
-  max-height: 400px;
   aspect-ratio: 1;
   border-radius: var(--radius);
   object-position: top;
+  height: 350px;
 }
 .divider-line {
   width: 100%;
